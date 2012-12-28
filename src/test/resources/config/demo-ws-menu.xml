@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:util="http://www.springframework.org/schema/util"
+  xmlns:task="http://www.springframework.org/schema/task"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util-3.0.xsd
+        http://www.springframework.org/schema/task
+   	    http://www.springframework.org/schema/task/spring-task-3.0.xsd">
+	
+	<bean id="ws_prod_menu" class="slina.mb.menu.MenuNodeImpl">
+		<property name="state" value="close" />
+		<property name="menuTitle" value="Web Services" />
+		<property name="icon" value="images2/folder.png" />
+		<property name="nodeType" value="ParentNode" />
+		<property name="children">
+			<list>
+
+				<bean id="wsprod1" class="slina.mb.menu.MenuNodeImpl">
+					<property name="state" value="open" />
+					<property name="menuTitle" value="WS Prod 1" />
+					<property name="icon" value="images2/folder1.png" />
+					<property name="nodeType" value="Branch" />
+					<property name="children">
+						<list>
+							<!-- Start prod1 Node children 330 -->
+							<bean id="prod1WSApp2menu" class="slina.mb.menu.MenuNodeImpl">
+								<property name="menuTitle" value="App 2" />
+								<property name="icon" value="images2/file1.png" />
+								<property name="id" value="330" />
+								<property name="nodeType" value="Leaf" />
+								<property name="logFilePathList">
+									<list>
+										<ref bean="prod1WSApp2Log" />
+									</list>
+								</property>		
+							</bean>
+	
+							<bean id="prod1WSApp4menu" class="slina.mb.menu.MenuNodeImpl">
+								<property name="menuTitle" value="App 4" />
+								<property name="icon" value="images2/file1.png" />
+								<property name="id" value="331" />
+								<property name="nodeType" value="Leaf" />
+								<property name="logFilePathList">
+									<list>
+										<ref bean="prod1WSApp4Log" />
+									</list>
+								</property>
+							</bean>
+	
+							<bean id="prod1WSApp7menu" class="slina.mb.menu.MenuNodeImpl">
+								<property name="menuTitle" value="App 7" />
+								<property name="icon" value="images2/file1.png" />
+								<property name="id" value="332" />
+								<property name="nodeType" value="Leaf" />
+								<property name="logFilePathList">
+									<list>
+										<ref bean="prod1WSApp7Log" />
+									</list>
+								</property>
+							</bean>
+	
+	
+							<bean id="prod1WSSysoutMenu" class="slina.mb.menu.MenuNodeImpl">
+								<property name="menuTitle" value="System Out" />
+								<property name="icon" value="images2/file1.png" />
+								<property name="id" value="335" />
+								<property name="nodeType" value="Leaf" />
+								<property name="logFilePathList">
+									<list>
+										<ref bean="prod1WSSysoutLog" />
+									</list>
+								</property>
+							</bean>
+	
+							<!-- end applications prod1 Node children -->
+						</list>
+					</property>
+				</bean>
+	
+
+				<bean id="iwaprod2" class="slina.mb.menu.MenuNodeImpl">
+					<property name="state" value="open" />
+					<property name="menuTitle" value="WS Prod 2" />
+					<property name="icon" value="images2/folder1.png" />
+					<property name="nodeType" value="Branch" />
+					<property name="children">
+						<list>
+
+
+							<bean id="prod2WSApp2menu" class="slina.mb.menu.MenuNodeImpl">
+								<property name="menuTitle" value="App 2" />
+								<property name="icon" value="images2/file1.png" />
+								<property name="id" value="360" />
+								<property name="nodeType" value="Leaf" />
+								<property name="logFilePathList">
+									<list>
+										<ref bean="prod2WSApp2Log" />
+									</list>
+								</property>
+							</bean>
+	
+							<bean id="prod2WSApp4menu" class="slina.mb.menu.MenuNodeImpl">
+								<property name="menuTitle" value="App 4" />
+								<property name="icon" value="images2/file1.png" />
+								<property name="id" value="361" />
+								<property name="nodeType" value="Leaf" />
+								<property name="logFilePathList">
+									<list>
+										<ref bean="prod2WSApp4Log" />
+									</list>
+								</property>
+							</bean>
+	
+							<bean id="prod2WSApp7menu" class="slina.mb.menu.MenuNodeImpl">
+								<property name="menuTitle" value="App 7" />
+								<property name="icon" value="images2/file1.png" />
+								<property name="id" value="362" />
+								<property name="nodeType" value="Leaf" />
+								<property name="logFilePathList">
+									<list>
+										<ref bean="prod2WSApp7Log" />
+									</list>
+								</property>
+							</bean>
+	
+
+
+							<bean id="prod2WSSysoutMenu" class="slina.mb.menu.MenuNodeImpl">
+								<property name="menuTitle" value="System Out" />
+								<property name="icon" value="images2/file1.png" />
+								<property name="id" value="376" />
+								<property name="nodeType" value="Leaf" />
+								<property name="logFilePathList">
+									<list>
+										<ref bean="prod2WSSysoutLog" />
+									</list>
+								</property>
+							</bean>
+
+						</list>
+					</property>
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	
+</beans>

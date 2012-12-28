@@ -1,0 +1,42 @@
+[2012-10-15 08:32:03,     0] INFO[initDefinitionsFactory](TilesPlugin:236) - Tiles definition factory loaded for module ''.
+[2012-10-15 08:32:03,    31] INFO[init](ContextLoaderPlugIn:218) - ContextLoaderPlugIn for Struts ActionServlet 'action, module '': initialization started
+[2012-10-15 08:32:03,    78] INFO[<clinit>](CollectionFactory:73) - JDK 1.4+ collections available
+[2012-10-15 08:32:03,    78] INFO[<clinit>](CollectionFactory:76) - Commons Collections 3.x available
+[2012-10-15 08:32:03,   109] INFO[loadBeanDefinitions](XmlBeanDefinitionReader:330) - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/applicationContext-web.xml]
+[2012-10-15 08:32:03,   140] INFO[loadBeanDefinitions](XmlBeanDefinitionReader:330) - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/applicationContext-Engine.xml]
+[2012-10-15 08:32:03,   203] INFO[refreshBeanFactory](AbstractRefreshableApplicationContext:100) - Bean factory for application context [WebApplicationContext for namespace 'action-servlet']: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [hibernateProperties,propertyConfigurer,dataSource,daoJdbcTemplate,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,detailsServiceMethods,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor,txAdvice,searchDao,searchService,detailsService,jdbcTemplate,securityService,/Search,/Details,/xyzUpdateDetails,/rstUpdateDetails,/Capture,/authorizeUser]; root of BeanFactory hierarchy
+[2012-10-15 08:32:03,   219] INFO[refresh](AbstractApplicationContext:322) - 22 beans defined in application context [WebApplicationContext for namespace 'action-servlet']
+[2012-10-15 08:32:03,   265] INFO[loadProperties](PropertiesLoaderSupport:175) - Loading properties file from class path resource [config/fs/ctrs/db.properties]
+[2012-10-15 08:32:03,   281] INFO[<clinit>](DefaultAopProxyFactory:61) - CGLIB2 available: proxyTargetClass feature enabled
+[2012-10-15 08:32:03,   281] INFO[postProcessAfterInitialization](AbstractApplicationContext$BeanPostProcessorChecker:898) - Bean 'org.springframework.aop.config.internalAutoProxyCreator' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2012-10-15 08:32:03,   281] INFO[initMessageSource](AbstractApplicationContext:473) - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@24d3a]
+[2012-10-15 08:32:03,   281] INFO[initApplicationEventMulticaster](AbstractApplicationContext:495) - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@11c5342]
+[2012-10-15 08:32:03,   297] INFO[initThemeSource](UiApplicationContextUtils:83) - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@9e3fc2]
+[2012-10-15 08:32:03,   297] INFO[preInstantiateSingletons](DefaultListableBeanFactory:261) - Pre-instantiating singletons in factory [org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [hibernateProperties,propertyConfigurer,dataSource,daoJdbcTemplate,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,detailsServiceMethods,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor,txAdvice,searchDao,searchService,detailsService,jdbcTemplate,xmlConfig,securityService,/Search,/Details,/xyzUpdateDetails,/rstUpdateDetails,/Capture,/authorizeUser]; root of BeanFactory hierarchy]
+[2012-10-15 08:32:03,   297] INFO[loadProperties](PropertiesLoaderSupport:175) - Loading properties file from class path resource [config/fs/ctres/db.properties]
+[2012-10-15 08:32:03,   500] INFO[<clinit>](Environment:479) - Hibernate 3.1.3
+[2012-10-15 08:32:03,   500] INFO[<clinit>](Environment:509) - hibernate.properties not found
+[2012-10-15 08:32:03,   500] INFO[<clinit>](Environment:525) - using CGLIB reflection optimizer
+[2012-10-15 08:32:03,   500] INFO[<clinit>](Environment:555) - using JDK 1.4 java.sql.Timestamp handling
+[2012-10-15 08:32:04,  1187] INFO[buildSettings](SettingsFactory:125) - Automatic flush during beforeCompletion(): disabled
+[2012-10-15 08:32:04,  1187] INFO[buildSettings](SettingsFactory:129) - Automatic session close at end of transaction: disabled
+[2012-10-15 08:32:04,  1203] INFO[buildSettings](SettingsFactory:136) - JDBC batch size: 15
+[2012-10-15 08:32:04,  1203] INFO[buildSettings](SettingsFactory:139) - JDBC batch updates for versioned data: disabled
+[2012-10-15 08:32:04,  1203] INFO[buildSettings](SettingsFactory:144) - Scrollable result sets: enabled
+[2012-10-15 08:32:04,  1203] INFO[buildSettings](SettingsFactory:152) - JDBC3 getGeneratedKeys(): enabled
+[2012-10-15 08:32:04,  1203] INFO[buildSettings](SettingsFactory:160) - Connection release mode: on_close
+[2012-10-15 08:32:04,  1203] INFO[buildSettings](SettingsFactory:187) - Default batch fetch size: 1
+[2012-10-15 08:32:04,  1203] INFO[buildSettings](SettingsFactory:191) - Generate SQL with comments: disabled
+[2012-10-15 08:32:04,  1203] INFO[buildSettings](SettingsFactory:195) - Order SQL updates by primary key: disabled
+[2012-10-15 08:32:04,  1203] INFO[createQueryTranslatorFactory](SettingsFactory:338) - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[2012-10-15 08:32:04,  1203] INFO[<init>](ASTQueryTranslatorFactory:24) - Using ASTQueryTranslatorFactory
+[2012-10-15 08:32:04,  1203] INFO[buildSettings](SettingsFactory:203) - Query language substitutions: {}
+[2012-10-15 08:32:04,  1203] INFO[buildSettings](SettingsFactory:209) - Second-level cache: enabled
+[2012-10-15 08:32:04,  1203] INFO[buildSettings](SettingsFactory:213) - Query cache: disabled
+[2012-10-15 08:32:04,  1203] INFO[createCacheProvider](SettingsFactory:325) - Cache provider: org.hibernate.cache.EhCacheProvider
+[2012-10-15 08:32:04,  1203] INFO[buildSettings](SettingsFactory:228) - Optimize cache for minimal puts: disabled
+[2012-10-15 08:32:04,  1203] INFO[buildSettings](SettingsFactory:237) - Structured second-level cache entries: disabled
+[2012-10-15 08:32:04,  1203] INFO[buildSettings](SettingsFactory:257) - Echoing all SQL to stdout
+[2012-10-15 08:32:04,  1203] INFO[buildSettings](SettingsFactory:264) - Statistics: disabled
+[2012-10-15 08:32:04,  1203] INFO[buildSettings](SettingsFactory:268) - Deleted entity synthetic identifier rollback: disabled
+[2012-10-15 08:32:04,  1203] INFO[buildSettings](SettingsFactory:283) - Default entity-mode: pojo

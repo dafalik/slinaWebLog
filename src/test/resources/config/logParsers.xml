@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:util="http://www.springframework.org/schema/util"
+  xmlns:task="http://www.springframework.org/schema/task"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util-3.0.xsd
+        http://www.springframework.org/schema/task
+   	    http://www.springframework.org/schema/task/spring-task-3.0.xsd">
+   	    
+   <!-- 
+   
+   spring escapes the \ to \\. all single \ should have \\
+   
+  (\d{2})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2}),(\d{3}) (\s*[^ ]*) (\s*[^ ]*) (.*)$
+ 
+    -->
+    
+  
+   
+   
+   <!--  file reader from local repository -->
+   <bean id="logFileReader" class="slina.mb.utils.LogFileReaderImpl" >	 
+   		<property name="checkClassPath" value="true"/>
+   </bean>
+   
+   <!--       Parser configuration starts here -->
+   
+   <bean id="logLevelLookup" class="slina.mb.parsing.LogLevelMapImp" />	    
+   	    
+   <bean id="ibmParserConfig" class="slina.mb.parsing.StandardParserConfigImpl">
+   		 <constructor-arg value="(\s*\[\s*)(\d{1,2})\/(\d{1,2})\/(\d{2,4}) (\d{1,2}):(\d{2}):(\d{2}):(\d{3}) (\w{3})(\s*\]) (\s*[^ ]*) (\s*[^ ]*) (\s*[^ ]*) (.*)$" index="0" />
+   		 <constructor-arg ref="logLevelLookup" index="1" />
+   		
+   		 <property name="id" value="0"/>
+  		 <property name="year" value="4"/>
+  		 <property name="month" value="2"/>
+  		 <property name="day" value="3"/>
+  		 <property name="hour" value="5"/>
+  		 <property name="minute" value="6"/>
+  		 <property name="seconds" value="7"/>
+  		 <property name="miliseconds" value="8"/>
+  		 <property name="logClass" value="12"/>
+  		 <property name="logMessage" value="14"/>
+  		 <property name="logLevel" value="13"/>
+   </bean>   	      	  
+ 
+    <bean id="parserConfig1" class="slina.mb.parsing.StandardParserConfigImpl">
+   		 <constructor-arg value="(\s*\[\s*)(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2}),(\d{3})(\s*\]) (\s*[^ ]*) (\s*[^ ]*) (\s*)--(\s*) (.*)$" index="0" />
+   		 <constructor-arg ref="logLevelLookup" index="1" />
+   		
+   		<property name="id" value="1"/>
+  		 <property name="year" value="2"/>
+  		 <property name="month" value="3"/>
+  		 <property name="day" value="4"/>
+  		 <property name="hour" value="5"/>
+  		 <property name="minute" value="6"/>
+  		 <property name="seconds" value="7"/>
+  		 <property name="miliseconds" value="8"/>
+  		 <property name="logClass" value="11"/>
+  		 <property name="logMessage" value="14"/>
+  		 <property name="logLevel" value="10"/>
+   </bean> 
+
+     <bean id="parserConfig2" class="slina.mb.parsing.StandardParserConfigImpl">
+   		 <constructor-arg value="(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2}),(\d{3}) (\s*[^ ]*) (\s*[^ ]*) (.*)$" index="0" />
+   		 <constructor-arg ref="logLevelLookup" index="1" />
+   		
+   		<property name="id" value="2"/>
+  		 <property name="year" value="1"/>
+  		 <property name="month" value="2"/>
+  		 <property name="day" value="3"/>
+  		 <property name="hour" value="4"/>
+  		 <property name="minute" value="5"/>
+  		 <property name="seconds" value="6"/>
+  		 <property name="miliseconds" value="7"/>
+  		 <property name="logClass" value="9"/>
+  		 <property name="logMessage" value="10"/>
+  		 <property name="logLevel" value="8"/>
+   </bean>  
+
+      <bean id="parserConfig3" class="slina.mb.parsing.StandardParserConfigImpl">
+   		 <constructor-arg value="(\d{2})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2}),(\d{3}) (\s*[^ ]*) (\s*[^ ]*) (\s*[^ ]*) (.*)$" index="0" />
+   		 <constructor-arg ref="logLevelLookup" index="1" />
+   		
+   		<property name="id" value="3"/>
+  		 <property name="year" value="1"/>
+  		 <property name="month" value="2"/>
+  		 <property name="day" value="3"/>
+  		 <property name="hour" value="4"/>
+  		 <property name="minute" value="5"/>
+  		 <property name="seconds" value="6"/>
+  		 <property name="miliseconds" value="7"/>
+  		 <property name="logClass" value="9"/>
+  		 <property name="logMessage" value="11"/>
+  		 <property name="logLevel" value="8"/>
+   </bean> 
+
+       <bean id="parserConfig4" class="slina.mb.parsing.StandardParserConfigImpl">
+   		 <constructor-arg value="(\d{2})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2}),(\d{3}) (\s*[^ ]*) (\s*[^ ]*) (.*)$" index="0" />
+   		 <constructor-arg ref="logLevelLookup" index="1" />
+   		
+   		<property name="id" value="4"/>
+  		 <property name="year" value="1"/>
+  		 <property name="month" value="2"/>
+  		 <property name="day" value="3"/>
+  		 <property name="hour" value="4"/>
+  		 <property name="minute" value="5"/>
+  		 <property name="seconds" value="6"/>
+  		 <property name="miliseconds" value="7"/>
+  		 <property name="logClass" value="9"/>
+  		 <property name="logMessage" value="10"/>
+  		 <property name="logLevel" value="8"/>
+   </bean> 
+
+       <bean id="parserConfig5" class="slina.mb.parsing.StandardParserConfigImpl">
+   		 <constructor-arg value="\[(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2}),(\s*[^ ]*)\] (\s*[^ ]*)\[(\s*[^ ]*) (\s*[^ ]*) (.*)$" index="0" />
+   		 <constructor-arg ref="logLevelLookup" index="1" />
+   		
+   		<property name="id" value="5"/>
+  		 <property name="year" value="1"/>
+  		 <property name="month" value="2"/>
+  		 <property name="day" value="3"/>
+  		 <property name="hour" value="4"/>
+  		 <property name="minute" value="5"/>
+  		 <property name="seconds" value="6"/>
+  		 <property name="miliseconds" value="7"/>
+  		 <property name="logClass" value="9"/>
+  		 <property name="logMessage" value="11"/>
+  		 <property name="logLevel" value="8"/>
+   </bean> 
+
+ 
+      <bean id="parserConfig6" class="slina.mb.parsing.StdinParserConfigImpl">
+   		 <constructor-arg value="(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2}),(\d{3}) (\s*[^ ]*) (\s*[^ ]*) (.*)$" index="0" />
+   		 <constructor-arg ref="logLevelLookup" index="1" />
+   		
+   		<property name="id" value="6"/>
+  		 <property name="year" value="1"/>
+  		 <property name="month" value="2"/>
+  		 <property name="day" value="3"/>
+  		 <property name="hour" value="4"/>
+  		 <property name="minute" value="5"/>
+  		 <property name="seconds" value="6"/>
+  		 <property name="miliseconds" value="7"/>
+  		 <property name="logClass" value="9"/>
+  		 <property name="logMessage" value="10"/>
+  		 <property name="logLevel" value="8"/>
+   </bean> 
+
+    <bean id="filteringParserConfig1" class="slina.mb.parsing.FilteringParserConfigImpl">
+   		 <constructor-arg value="\[(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2}),(\d{3})\] (\s*[^ ]*) (\s*[^ ]*) (\s*[^ ]*) (\s*[^ ]*) (\s*[^ ]*) (.*)$" index="0" />
+   		 <constructor-arg value="(\[\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3}\]) (.*)$" index="1" />
+   		 <constructor-arg ref="logLevelLookup" index="2" />
+   		 <constructor-arg value="HIBeat,Timer,UserServiceGatewayXMLBuilderImpl,MarketingServiceGatewayXMLBuilderImpl" index="3" />
+   		
+   		<property name="id" value="7"/>
+  		 <property name="year" value="1"/>
+  		 <property name="month" value="2"/>
+  		 <property name="day" value="3"/>
+  		 <property name="hour" value="4"/>
+  		 <property name="minute" value="5"/>
+  		 <property name="seconds" value="6"/>
+  		 <property name="miliseconds" value="7"/>
+  		 <property name="logClass" value="12"/>
+  		 <property name="logMessage" value="13"/>
+  		 <property name="logLevel" value="11"/>
+   </bean>  
+ 
+      <bean id="customParserConfig1" class="slina.mb.parsing.CustomParserConfigImpl">
+   		 <constructor-arg value="(\d{2}):(\d{2}):(\d{2}),(\d{3}) (\s*\|) (\s*[^ ]*) (\s*\|) (\s*[^ ]*) (\s*\:) (\s*[^ ]*) (\s*\|) (\s*[^ ]*) (\s*\|) (.*)$" index="0" />
+   		 <constructor-arg ref="logLevelLookup" index="1" />
+   		
+   		<property name="id" value="8"/>
+  		 <property name="year" value="-1"/>
+  		 <property name="month" value="-1"/>
+  		 <property name="day" value="-1"/>
+  		 <property name="hour" value="1"/>
+  		 <property name="minute" value="2"/>
+  		 <property name="seconds" value="3"/>
+  		 <property name="miliseconds" value="4"/>
+  		 <property name="logClass" value="12"/>
+  		 <property name="logMessage" value="14"/>
+  		 <property name="logLevel" value="6"/>
+  		 <property name="replacementMap" ref="customParserConfigMap1"/>
+   </bean> 
+ 
+ 
+ 			<util:map id="customParserConfigMap1">			
+			    <entry key="YEAR"   value="2050" />    
+			    <entry key="MONTH"  value="11" />		    
+			    <entry key="DAY"    value="12" />
+			</util:map>
+
+      <bean id="customParserConfig2" class="slina.mb.parsing.NpoParserConfigImpl">
+   		 <constructor-arg value="(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2}).(\d{3})(\s*[^ ]*)(\s*\[\s*)(\s*[^ ]*)(\]\s*)(\s*[^ ]*)(.*)$" index="0" />
+   		 <constructor-arg ref="logLevelLookup" index="1" />
+   		
+   		<property name="id" value="9"/>
+  		 <property name="year" value="1"/>
+  		 <property name="month" value="2"/>
+  		 <property name="day" value="3"/>
+  		 <property name="hour" value="4"/>
+  		 <property name="minute" value="5"/>
+  		 <property name="seconds" value="6"/>
+  		 <property name="miliseconds" value="7"/>
+  		 <property name="logClass" value="12"/>
+  		 <property name="logMessage1" value="8"/>
+  		 <property name="logMessage2" value="13"/>
+  		 <property name="logLevel" value="10"/>
+   </bean> 
+
+ 
+       <bean id="customParserConfig3" class="slina.mb.parsing.NpoParserConfigImpl">
+   		 <constructor-arg value="\[(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2}),(\d{3})\] (\s*[^ ]*) (\s*[^ ]*) (\s*[^ ]*) (.*)$" index="0" />
+   		 <constructor-arg ref="logLevelLookup" index="1" />
+   		
+   		<property name="id" value="10"/>
+  		 <property name="year" value="1"/>
+  		 <property name="month" value="2"/>
+  		 <property name="day" value="3"/>
+  		 <property name="hour" value="4"/>
+  		 <property name="minute" value="5"/>
+  		 <property name="seconds" value="6"/>
+  		 <property name="miliseconds" value="7"/>
+  		 <property name="logClass" value="10"/>
+  		 <property name="logMessage1" value="8"/>
+  		 <property name="logMessage2" value="11"/>
+  		 <property name="logLevel" value="9"/>
+   </bean> 
+ 
+       <bean id="customParserConfig4" class="slina.mb.parsing.CustomParserConfigImpl">
+   		 <constructor-arg value="(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2}),(\d{3}) (\s*[^ ]*) (\s*\[)(\s*[^ ]*)(\s*\])(.*)$" index="0" />
+   		 <constructor-arg ref="logLevelLookup" index="1" />
+   		
+   		<property name="id" value="11"/>
+  		 <property name="year" value="1"/>
+  		 <property name="month" value="2"/>
+  		 <property name="day" value="3"/>
+  		 <property name="hour" value="4"/>
+  		 <property name="minute" value="5"/>
+  		 <property name="seconds" value="6"/>
+  		 <property name="miliseconds" value="7"/>
+  		 <property name="logClass" value="-1"/>
+  		 <property name="logMessage" value="10"/>
+  		 <property name="logLevel" value="8"/>
+  		 <property name="replacementMap" ref="customParserConfigMap2"/>
+   </bean> 
+ 
+ 
+ 			<util:map id="customParserConfigMap2">			
+			    <entry key="LOG_CLASS"   value="None" />    
+			</util:map>
+ 
+
+ 
+    <bean id="stdLogParser" class="slina.mb.parsing.Log4jParserImpl" >	 
+    	<property name="parserConfigMap" ref="logParserConfigMap" />
+    	<property name="parserId" value="0" />
+    </bean> 
+ 
+
+
+ 	<util:map id="logParserConfigMap">
+ 	
+ 		<entry key="0"   value-ref="ibmParserConfig" />   
+ 		<entry key="1"   value-ref="parserConfig1" />  
+ 		<entry key="2"   value-ref="parserConfig2" />   
+ 		<entry key="3"   value-ref="parserConfig3" />   	
+ 		<entry key="4"   value-ref="parserConfig4" />   
+ 		<entry key="5"   value-ref="parserConfig5" />  
+ 		<entry key="6"   value-ref="parserConfig6" />   
+ 		<entry key="7"   value-ref="filteringParserConfig1" />    
+ 		<entry key="8"   value-ref="customParserConfig1" />   
+ 		<entry key="9"   value-ref="customParserConfig2" />  
+ 		<entry key="10"   value-ref="customParserConfig3" />   
+ 		<entry key="11"   value-ref="customParserConfig4" />    				
+ 	</util:map>
+
+
+
+
+
+    <bean id="filteringLogParser" class="slina.mb.parsing.FilteringLog4jParserImpl" >	 
+    	<property name="parserConfigMap" ref="logParserConfigMap" />
+    	<property name="parserId" value="1" />
+    </bean> 
+
+	<util:map id="filterParserConfigMap">			
+			    <entry key="7"   value-ref="filteringParserConfig1" />    
+	</util:map>
+
+
+   <util:map id="logParserMap"  key-type="java.lang.Integer">
+    	<entry key="0"   value-ref="stdLogParser" />   
+ 		<entry key="1"   value-ref="filteringLogParser" />  
+   </util:map>
+
+		    	   			      		
+   							  							
+</beans>

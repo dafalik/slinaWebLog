@@ -1,0 +1,4 @@
+12-10-30 15:48:07,934 ERROR InsertTag - ServletException in '/WEB-INF/pages/toc.jsp': Cannot find bean: \SESSION_ITEMS\ in scope: \session\javax.servlet.ServletException: Cannot find bean: \SESSION_ITEMS\ in scope: \session\ ,
+at org.apache.jasper.runtime.PageContextImpl.doHandlePageException(PageContextImpl.java:82,
+12-10-19 12:54:23,627 ERROR DispatchAction - Request[/Client] does not contain handler parameter named 'dispatch'.  This may be caused by whitespace in the label text.,
+12-10-19 12:54:23,642 FATAL CRUDExceptionHandler - [CoyotePrincipal[pescid1]] javax.servlet.ServletException: Request[/PotentialClient] does not contain handler parameter named 'tab'.  This may be caused by whitespace in the label text.

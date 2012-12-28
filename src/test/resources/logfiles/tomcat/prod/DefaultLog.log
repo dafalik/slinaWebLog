@@ -1,0 +1,5 @@
+
+12-09-21 08:59:13,750 INFO  org.apache.struts.util.PropertyMessageResources Class:org.apache.struts.util.PropertyMessageResources Method:<init>: Line:127 - Initializing, config='org.apache.struts.taglib.html.LocalStrings', returnNull=true
+12-09-21 08:59:13,750 INFO  org.apache.struts.util.PropertyMessageResources Class:org.apache.struts.util.PropertyMessageResources Method:<init>: Line:127 - Initializing, config='org.apache.struts.util.LocalStrings', returnNull=true
+12-09-21 08:59:13,750 INFO  org.apache.struts.util.PropertyMessageResources Class:org.apache.struts.util.PropertyMessageResources Method:<init>: Line:127 - Initializing, config='org.apache.struts.taglib.bean.LocalStrings', returnNull=true
+12-09-21 08:59:13,750 INFO  org.apache.struts.util.PropertyMessageResources Class:org.apache.struts.util.PropertyMessageResources Method:<init>: Line:127 - Initializing, config='org.apache.struts.taglib.html.LocalStrings', returnNull=true

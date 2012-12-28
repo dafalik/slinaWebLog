@@ -1,0 +1,80 @@
+/*
+ *	 This file is part of Slina web log.
+ *
+ *   Slina web log is free software: you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation, either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   Slina web log is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
+ */
+package slina.mb.menu;
+
+import java.io.Serializable;
+import java.util.HashMap;
+import java.util.Map;
+
+public class DataImpl implements Serializable {
+
+	private static final long serialVersionUID = 2486921487987914162L;
+	private String title;
+	private String icon;
+	private Map<String, String> attr = new HashMap<String, String>();
+	
+	public DataImpl() {
+		super();
+	}
+
+
+	public DataImpl(String title, String icon) {
+		super();
+		this.title = title;
+		this.icon = icon;
+	}
+
+
+
+
+
+
+	public String getTitle() {
+		return title;
+	}
+	
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	
+	public String getIcon() {
+		return icon;
+	}
+	
+	public void setIcon(String icon) {
+		this.icon = icon;
+	}
+
+
+	/**
+	 * @return the attr
+	 */
+	public Map<String, String> getAttr() {
+		return attr;
+	}
+
+
+	/**
+	 * @param attr the attr to set
+	 */
+	public void setAttr(Map<String, String> attr) {
+		this.attr = attr;
+	}
+	
+	
+
+}

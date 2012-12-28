@@ -1,0 +1,20 @@
+2012-11-03 10:14:05,407 [ERROR] com.drfxtry.Logger R1062143	-	-	Authenticator.getProfile - There was an issue getting user profile from external service.,
+at java.lang.J9VMInternals.newInstanceImpl(Native Method),
+2012-11-03 09:29:15,752 [INFO] com.comtx.Logger R1044340	-	-	NpServlet.login - Setting the session timeout to user specified value of 30,
+2012-11-03 09:41:18,195 [ERROR] com.comtx.Logger.2e5f2e5f R1048749	242333	ggg@hh.bb	Launch.acquireEngine - Error: You have tried to acquire a second Launch engine: ,
+2012-11-03 10:14:05,407 [ERROR] com.comtx.Logger R1062143	-	-	BaseAuthenticator.getProfile - There was an issue getting user profile from external service.
+2012-11-03 10:14:05,407 [ERROR] com.drfxtry.Logger R1062143	-	-	Authenticator.getProfile - There was an issue getting user profile from external service.,
+at java.lang.J9VMInternals.newInstanceImpl(Native Method),
+2012-11-03 10:29:15,752 [INFO] com.comtx.Logger R1044340	-	-	NpServlet.login - Setting the session timeout to user specified value of 30,
+2012-11-03 10:41:18,195 [ERROR] com.comtx.Logger.2e5f2e5f R1048749	242333	ggg@hh.bb	Launch.acquireEngine - Error: You have tried to acquire a second Launch engine: ,
+2012-11-03 11:14:05,407 [ERROR] com.comtx.Logger R1062143	-	-	BaseAuthenticator.getProfile - There was an issue getting user profile from external service.
+2012-11-03 11:14:05,407 [ERROR] com.drfxtry.Logger R1062143	-	-	Authenticator.getProfile - There was an issue getting user profile from external service.,
+at java.lang.J9VMInternals.newInstanceImpl(Native Method),
+2012-11-03 12:29:15,752 [INFO] com.comtx.Logger R1044340	-	-	NpServlet.login - Setting the session timeout to user specified value of 30,
+2012-11-03 12:41:18,195 [ERROR] com.comtx.Logger.2e5f2e5f R1048749	242333	ggg@hh.bb	Launch.acquireEngine - Error: You have tried to acquire a second Launch engine: ,
+2012-11-03 13:14:05,407 [ERROR] com.comtx.Logger R1062143	-	-	BaseAuthenticator.getProfile - There was an issue getting user profile from external service.
+2012-11-03 13:14:05,407 [ERROR] com.drfxtry.Logger R1062143	-	-	Authenticator.getProfile - There was an issue getting user profile from external service.,
+at java.lang.J9VMInternals.newInstanceImpl(Native Method),
+2012-11-03 14:29:15,752 [INFO] com.comtx.Logger R1044340	-	-	NpServlet.login - Setting the session timeout to user specified value of 30,
+2012-11-03 15:41:18,195 [ERROR] com.comtx.Logger.2e5f2e5f R1048749	242333	ggg@hh.bb	Launch.acquireEngine - Error: You have tried to acquire a second Launch engine: ,
+2012-11-03 16:14:05,407 [ERROR] com.comtx.Logger R1062143	-	-	BaseAuthenticator.getProfile - There was an issue getting user profile from external service.

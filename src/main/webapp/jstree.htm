@@ -1,0 +1,166 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>jsTree v.1.0 - Demo</title>
+	<script type="text/javascript" language="javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="jstree/jquery.jstree.js"></script>
+	<script type="text/javascript"  src="jstree/jquery.cookie.js"></script>
+	<script type="text/javascript"  src="jstree/jquery.hotkeys.js"></script>
+</head>
+<body >
+ <div id="container">
+
+	<h2>Doing something when a node is clicked</h2>
+
+
+			
+			
+	     <div id="demo4" class="demo" style="height:100px;">
+				<ul>
+					<li id="shtml_1" class="jstree-open">
+						<a href="#">Root node 1</a>
+						<ul>
+							<li id="shtml_2">
+									<a href="#">Child node 1</a>
+							</li>
+							<li id="shtml_3">
+								<a href="#">Child node 2</a>
+							</li>
+						</ul>
+					</li>
+					<li id="shtml_4">
+						<a href="#">Root node 2</a>
+					</li>
+				</ul>
+			</div>
+			
+			
+			
+			<script type="text/javascript" >
+			$(function () {
+
+					
+				$("#demo4").jstree({ 
+						"themes" : {
+							"theme" : "default",
+							"dots" : true,
+							"icons" : true
+						},	
+						 "json_data" : {
+		                        "data":[
+		                            {
+		                                "data" : "IWA",
+		                                "children" :[
+		                                            {"data":"PROD", "children":
+		                                            	 [{"data":"BCS",  "metadata":{ "id":"300"}},
+		                                                  {"data":"Client Statements", "metadata":{ "id":"301"}},
+		                                                  {"data":"Mailbox-411","metadata":{ "id":"304"}}], 
+		                                                 },
+		                                            {"data":"PROD1", "children":
+		                                            	 [{"data":"BCS",  "metadata":{ "id":"100"}},
+		                                                  {"data":"Client Statements", "metadata":{ "id":"101"}},
+		                                                  {"data":"Mailbox-411","metadata":{ "id":"102"}}], 
+			                                                 },
+		                                             {"data":"PROD2", "children":
+		                                            	 [{"data":"BCS",  "metadata":{ "id":"200"}},
+		                                                  {"data":"Client Statements", "metadata":{ "id":"201"}},
+		                                                  {"data":"Mailbox-411","metadata":{ "id":"202"}}], 
+		                                                 }
+		                                            ]
+		                            },
+		                            {
+		                                "data" : "WS",
+		                                "children" :[
+			                                            {"data":"PROD", "children":
+			                                            	 [{"data":"PFP",  "metadata":{ "id":"300"}},
+			                                                  {"data":"Client Statements", "metadata":{ "id":"301"}},
+			                                                  { attributes: { id:"X9304"}, metadata:{ id:"Y9304"}, data: { title : "Custom icon", icon : "images2/file.png" } },
+			                                                  {"data":"Contact","metadata":{ "id":"304"}}], 
+			                                                 },
+			                                            {"data":"PROD1", "children":
+			                                            	 [{"data":"PFP",  "metadata":{ "id":"100"}},
+			                                                  {"data":"Client Statements", "metadata":{ "id":"101"}},
+			                                                  {"data":"Contact","metadata":{ "id":"102"}}], 
+				                                                 },
+			                                             {"data":"PROD2", "children":
+			                                            	 [{"data":"PFP",  "metadata":{ "id":"200"}},
+			                                                  {"data":"Client Statements", "metadata":{ "id":"201"}},
+			                                                  {"data":"Contact","metadata":{ "id":"202"}}], 
+			                                                 }
+			                                            ]
+		                            },
+		                            {
+		                                "data" : "CAV",
+		                                "children" :[
+			                                            {"data":"PROD", "children":
+			                                            	 [{"data":"External",  "metadata":{ "id":"300"}},
+			                                                  {"data":"Internal", "metadata":{ "id":"301"}},
+			                                                  {"data":"I-Shared","metadata":{ "id":"304"}},
+			                                                  {"data":"E-Shared","metadata":{ "id":"304"}} ], 
+			                                                 },
+			                                            {"data":"PROD1", "children":
+			                                            	 [{"data":"External",  "metadata":{ "id":"300"}},
+			                                                  {"data":"Internal", "metadata":{ "id":"301"}},
+			                                                  {"data":"I-Shared","metadata":{ "id":"304"}},
+			                                                  {"data":"E-Shared","metadata":{ "id":"304"}} ],  
+				                                             },
+					                                      {"data":"PROD1", "children":
+					                                            	 [{"data":"External",  "metadata":{ "id":"300"}},
+					                                                  {"data":"Internal", "metadata":{ "id":"301"}},
+					                                                  {"data":"I-Shared","metadata":{ "id":"304"}},
+					                                                  {"data":"E-Shared","metadata":{ "id":"304"}} ],  
+						                                        }
+			                                            ]
+		                            },
+		                            {
+		                                "data" : "PFP",
+		                                "children" :[
+			                                {"data":"PROD", "children":
+                                            	 [{"data":"WAS",  "metadata":{ "id":"300"}},
+                                                  {"data":"Calc", "metadata":{ "id":"301"}}
+                                                 ], 
+			                                }
+		                                ]
+		                            }
+		                        ]
+		                    },
+						"plugins" : ["themes","json_data","ui"] })
+					// 1) if using the UI plugin bind to select_node
+					.bind("select_node.jstree", function (event, data) { 
+						// `data.rslt.obj` is the jquery extended node that was clicked
+						
+						var id = jQuery.data(data.rslt.obj[0],"id");
+						console.log(id);
+		
+						if(id == null) {
+							return;
+						}
+						
+						
+						alert(id);
+					})
+					// 2) if not using the UI plugin - the Anchor tags work as expected
+					//    so if the anchor has a HREF attirbute - the page will be changed
+					//    you can actually prevent the default, etc (normal jquery usage)
+					.delegate("a", "click", function (event, data) { event.preventDefault(); })					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+			});
+				</script>
+
+			</div>
+
+</body>
+</html>

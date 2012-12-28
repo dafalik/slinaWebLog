@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:util="http://www.springframework.org/schema/util"
+  xmlns:task="http://www.springframework.org/schema/task"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+        
+         	<bean id="encryptorConfig" class="slina.mb.common.encryption.Cipher" >
+			      <property name="algorithm" value="PBEWithMD5AndDES" />
+			      <property name="password" value="EpACm9aX3ZvUvI5ah/SdHfk4dTbAJmxDlWjvulF1qjI=" />
+			</bean>	 	 
+			 
+			 
+			<bean id="encryptor" class="org.jasypt.encryption.pbe.StandardPBEStringEncryptor">
+			    <property name="config" ref="encryptorConfig" />
+			</bean>
+			 
+			<bean class="org.jasypt.spring3.properties.EncryptablePropertyPlaceholderConfigurer">
+			    <constructor-arg ref="encryptor" />
+			    <property name="locations">
+			           <list>
+			               <value>/init/serverConfig.properties</value>
+			           </list>
+			    </property>
+			</bean>   	    
+   	  
+  <!--  	  ################### Production ######################################## -->
+   	  
+   	  
+ 			<bean id="tomcatProdServer" class="slina.mb.cron.ServerInfoImpl">
+			    <property name="prop1" value="${tomcat.prod.serverName}" />
+			    <property name="prop2" value="${tomcat.prod.userId}" />
+			    <property name="prop3" value="${tomcat.prod.password}" />
+			    <property name="prop4" value="${tomcat.prod.domain}" />
+			</bean>  	    
+   	    
+			<bean id="prod1AppServer" class="slina.mb.cron.ServerInfoImpl">
+			    <property name="prop1" value="${app.Prod1.property1}" />
+			    <property name="prop2" value="${app.Prod1.property2}" />
+			   <property name="prop3" value="${app.Prod1.property3}" />
+			    <property name="portNumber" value="${unix.portNumber}" />
+			</bean>    	  
+   	  
+			<bean id="prod2AppServer" class="slina.mb.cron.ServerInfoImpl">
+			    <property name="prop1" value="${app.Prod1.property1}" />
+			    <property name="prop2" value="${app.Prod1.property2}" />
+			   <property name="prop3" value="${app.Prod1.property3}" />
+			    <property name="portNumber" value="${unix.portNumber}" />
+			</bean> 	    
+   	    
+</beans>

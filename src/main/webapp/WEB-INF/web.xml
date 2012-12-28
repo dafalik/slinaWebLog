@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.5"
+    xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+
+  <display-name>Web Log</display-name>
+
+    <!-- By default, escape all special HTML characters in web pages. -->
+      <context-param>
+        <param-name>defaultHtmlEscape</param-name>
+        <param-value>true</param-value>
+      </context-param>
+
+   <!-- This is the name of the system property that contains the path to the  web app's root directory: Log4jConfigListener uses it.  The property
+       name must be unique for each web app. -->
+        <context-param>
+          <param-name>webAppRootKey</param-name>
+          <param-value>WebLog.Launcher.root</param-value>
+        </context-param>
+
+
+   <!-- Logging is initially controlled by the default configuration file
+       src/main/resources/log4j.xml.  Log4jConfigListener reconfigures logging
+       with the configuration file named here.
+           "classpath:" paths can be anywhere on the class path, including
+       the "properties" directory on the WAS servers; environment-specific
+       files go there. 
+        <context-param>
+          <param-name>log4jConfigLocation</param-name>
+          <param-value>classpath:/config/ig/mailbox/log4j.xml</param-value>
+        </context-param>
+-->
+    <context-param>
+        <param-name>log4jRefreshInterval</param-name>
+        <param-value>1000</param-value>
+    </context-param>
+
+
+
+   <!-- The ContextLoaderListener creates an application context for the
+       web application, and creates the beans that are defined in the
+       files listed in contextConfigLocation.
+           "classpath*:" file paths can be anywhere on the class path, including
+       the "properties" directory on the WAS servers; environment-specific
+       bean configurations such as security settings can go there.
+           Note: Log4jConfigListener must precede this listener.
+
+           -->
+      <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>
+        <!-- 
+        	/WEB-INF/production-logs.xml
+        	/WEB-INF/dev-menus.xml
+        	/WEB-INF/fit-menus.xml
+        	/WEB-INF/uat-menus.xml
+        	/WEB-INF/prod-menus.xml
+        	 -->
+        	 
+        	  classpath:config/main-menus.xml
+
+        <!--  
+              			 /WEB-INF/weblog-beans.xml
+             classpath:config/ig/mailbox/basic-mailbox-security.xml 
+    		 classpath:config/ig/mailbox/mailbox-beans.xml 
+    		 -->
+        </param-value>
+      </context-param>
+
+
+
+    <!-- Enforce UTF-8 Character Encoding .... IE8 requires this setting.
+       Note: this must be the first filter in the chain. -->
+    <filter>
+      <filter-name>charEncodingFilter</filter-name>
+      <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+      <init-param>
+        <param-name>encoding</param-name>
+        <param-value>UTF-8</param-value>
+      </init-param>
+      <init-param>
+        <param-name>forceEncoding</param-name>
+        <param-value>true</param-value>
+      </init-param>
+    </filter>
+
+  <!--  
+    <filter>
+        <filter-name>springSecurityFilterChain</filter-name>
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+    </filter>
+    
+        <filter-mapping>
+      <filter-name>springSecurityFilterChain</filter-name>
+      <url-pattern>/*</url-pattern>
+    </filter-mapping>
+-->
+
+    <filter-mapping>
+      <filter-name>charEncodingFilter</filter-name>
+      <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+
+
+
+
+    <listener>
+        <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+    </listener>
+
+      <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+      </listener>
+
+    <!--
+      - Publishes events for session creation and destruction through the application
+      - context. Optional unless concurrent session control is being used.
+      -->
+    <listener>
+      <listener-class>org.springframework.security.web.session.HttpSessionEventPublisher</listener-class>
+    </listener>
+
+
+
+        <servlet>
+          <servlet-name>weblog</servlet-name>
+          <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+          <load-on-startup>3</load-on-startup>
+        </servlet>
+
+      <servlet-mapping>
+        <servlet-name>weblog</servlet-name>
+        <url-pattern>*.html</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping>
+        <servlet-name>weblog</servlet-name>
+        <url-pattern>*.json</url-pattern>
+      </servlet-mapping>
+
+    <session-config>
+      <session-timeout>60</session-timeout>
+    </session-config>
+
+
+
+
+  <!-- Require that visitors to every URL, by any method, have the
+       "authenticated users" role.
+       -->
+   <!-- This element tells the servlet how to perform user authentication.  If
+       the user has not already been authenticated (for example, by a previous
+       visit that set up a session, or by SPNEGO in a production environment)
+       then make the browser use BASIC authentication.
+     
+      <login-config>
+        <auth-method>BASIC</auth-method>
+        <realm-name>a non-SPNEGO host</realm-name>
+      </login-config>
+-->
+    <!-- Define a role for all of the authenticated users.
+       The EAR's META-INF/application.xml file refers to this role.
+-->
+<!--  
+     <security-role>
+        <description>All Authenticated Users Role.</description>
+        <role-name>Everyone</role-name>
+      </security-role>
+
+
+    <security-constraint>
+        <web-resource-collection>
+          <web-resource-name>Mailbox 411 Launcher</web-resource-name>
+          <description>Protection area for the Pathway Mailbox 411.</description>
+          <url-pattern>/*</url-pattern>
+          <http-method>GET</http-method>
+          <http-method>POST</http-method>
+        </web-resource-collection>
+
+        <auth-constraint>
+          <role-name>Everyone</role-name>
+        </auth-constraint>
+    </security-constraint>
+ 
+-->
+  <error-page>
+    <error-code>404</error-code>
+    <location>/WEB-INF/jsp/404.jsp</location>
+  </error-page>
+
+  <error-page>
+    <error-code>403</error-code>
+    <location>/WEB-INF/jsp/403.jsp</location>
+  </error-page>
+
+
+
+</web-app>
+
+
+
+
+
+
+
+

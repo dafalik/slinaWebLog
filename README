@@ -1,0 +1,9 @@
+uses jsTree : http://www.jstree.com/
+jQuery : http://jquery.com/
+Sping framework: http://www.springsource.org/
+jcifs: http://jcifs.samba.org/
+jackson-jaxrs : https://github.com/FasterXML/jackson-jaxrs-json-provider
+junit : www.junit.org
+Several projects from Apache: www.apache.org
+Maven: http://maven.apache.org/
+and all the projects depends on above projects.

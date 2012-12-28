@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:util="http://www.springframework.org/schema/util"
+  xmlns:task="http://www.springframework.org/schema/task"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util-3.0.xsd
+        http://www.springframework.org/schema/task
+   	    http://www.springframework.org/schema/task/spring-task-3.0.xsd">
+   	    
+ 	
+ <!--  Application logs production 1 -->
+ 
+
+			    <bean id="prod1SysoutLog" class="slina.mb.io.LogFilePathImpl">
+						<property name="logDirectory" value="/logfiles/app/prod1" />
+						<property name="fileName" value="SystemOut.log" />
+						<property name="parserConfigId" value="0" />
+						<property name="parserId" value="0" />
+						<property name="sourceLogDirectory" value="/web/logs/apps/WebSphere/server1" />
+				</bean>	
+
+			    <bean id="prod1App1Log" class="slina.mb.io.LogFilePathImpl">
+						<property name="logDirectory" value="/logfiles/app/prod1" />
+						<property name="fileName" value="app1.log" />
+						<property name="parserConfigId" value="1" />
+						<property name="parserId" value="0" />
+						<property name="sourceLogDirectory" value="/web/logs/apps/abc" />
+				</bean> 
+ 
+			     <bean id="prod1App8Log" class="slina.mb.io.LogFilePathImpl">
+						<property name="logDirectory" value="/logfiles/app/prod1" />
+						<property name="fileName" value="app8.log" />
+						<property name="parserConfigId" value="8" />
+						<property name="parserId" value="0" />
+						<property name="sourceLogDirectory" value="/web/logs/apps/cde" />
+				</bean> 
+ 
+ 			     <bean id="prod1App9Log" class="slina.mb.io.LogFilePathImpl">
+						<property name="logDirectory" value="/logfiles/app/prod1" />
+						<property name="fileName" value="app9.log" />
+						<property name="parserConfigId" value="2" />
+						<property name="parserId" value="0" />
+						<property name="sourceLogDirectory" value="/apps/logs/web/efg" />
+				</bean> 
+ 
+ 
+ 				<bean id="prod1Application1Log" class="slina.mb.io.LogFilePathImpl">
+     					<property name="logDirectory" value="/logfiles/app/prod1" />
+     					<property name="fileName" value="application1.log" />
+     					<property name="parserConfigId" value="7" />
+     					<property name="parserId" value="1" />
+     					<property name="sourceLogDirectory" value="/apps/logs/web/igh" />
+   				</bean>
+
+ 				<bean id="prod1Application2Log" class="slina.mb.io.LogFilePathImpl">
+     					<property name="logDirectory" value="/logfiles/app/prod1" />
+     					<property name="fileName" value="application2.log" />
+     					<property name="parserConfigId" value="7" />
+     					<property name="parserId" value="1" />
+     					<property name="sourceLogDirectory" value="/apps/logs/web/jkl" />
+   				</bean> 
+ 
+   	    
+ <!--  Application logs production 2 -->
+ 
+
+			    <bean id="prod2SysoutLog" class="slina.mb.io.LogFilePathImpl">
+						<property name="logDirectory" value="/logfiles/app/prod2" />
+						<property name="fileName" value="SystemOut.log" />
+						<property name="parserConfigId" value="0" />
+						<property name="parserId" value="0" />
+						<property name="sourceLogDirectory" value="/web/logs/apps/WebSphere/server1" />
+				</bean>	
+
+			    <bean id="prod2App1Log" class="slina.mb.io.LogFilePathImpl">
+						<property name="logDirectory" value="/logfiles/app/prod2" />
+						<property name="fileName" value="app1.log" />
+						<property name="parserConfigId" value="1" />
+						<property name="parserId" value="0" />
+						<property name="sourceLogDirectory" value="/web/logs/apps/abc" />
+				</bean> 
+ 
+			     <bean id="prod2App8Log" class="slina.mb.io.LogFilePathImpl">
+						<property name="logDirectory" value="/logfiles/app/prod2" />
+						<property name="fileName" value="app8.log" />
+						<property name="parserConfigId" value="8" />
+						<property name="parserId" value="0" />
+						<property name="sourceLogDirectory" value="/web/logs/apps/cde" />
+				</bean> 
+ 
+ 			     <bean id="prod2App9Log" class="slina.mb.io.LogFilePathImpl">
+						<property name="logDirectory" value="/logfiles/app/prod2" />
+						<property name="fileName" value="app9.log" />
+						<property name="parserConfigId" value="2" />
+						<property name="parserId" value="0" />
+						<property name="sourceLogDirectory" value="/apps/logs/web/efg" />
+				</bean> 
+ 
+ 
+ 				<bean id="prod2Application1Log" class="slina.mb.io.LogFilePathImpl">
+     					<property name="logDirectory" value="/logfiles/app/prod2" />
+     					<property name="fileName" value="application1.log" />
+     					<property name="parserConfigId" value="7" />
+     					<property name="parserId" value="1" />
+     					<property name="sourceLogDirectory" value="/apps/logs/web/igh" />
+   				</bean>
+
+ 				<bean id="prod2Application2Log" class="slina.mb.io.LogFilePathImpl">
+     					<property name="logDirectory" value="/logfiles/app/prod2" />
+     					<property name="fileName" value="application2.log" />
+     					<property name="parserConfigId" value="7" />
+     					<property name="parserId" value="1" />
+     					<property name="sourceLogDirectory" value="/apps/logs/web/jkl" />
+   				</bean> 
+	    
+   	    
+</beans>
