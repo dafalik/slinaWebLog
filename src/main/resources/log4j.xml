@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "org/apache/log4j/xml/log4j.dtd">
+
+<log4j:configuration>
+    <!-- FATAL,ERROR,WARN,INFO,DEBUG,TRACE     use only one of these at a time. -->
+
+    <!-- ======================================================================
+      == Create Appenders.
+      -->
+
+    <!-- Log to the Eclipse console: -->
+    <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %-5p %c %m%n" />
+        </layout>
+    </appender>
+
+    <!-- Log to a file because the console can be truncated -->
+    <appender name="FILE" class="org.apache.log4j.FileAppender">
+    	<param name="file" value="/tmp/weblog.log" />
+    	<param name="append" value="false" />
+	<param name="encoding" value="utf-8" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %-5p %c %m%n" />
+        </layout>
+    </appender>
+
+    <!-- Log to a file because the console can be truncated -->
+    <appender name="LOCALHOST" class="org.apache.log4j.FileAppender">
+    	<param name="file" value="C:/temp/weblog.log" />
+    	<param name="append" value="false" />
+	<param name="encoding" value="utf-8" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %-5p %c %m%n" />
+        </layout>
+    </appender>
+
+
+
+    <!-- ======================================================================
+      == Tune specific loggers
+      -->
+
+    <!-- We want to see where the beans are being defined. -->
+    <logger name="org.springframework.beans.factory.xml.XmlBeanDefinitionReader" >
+    	<level value="INFO"/>
+    </logger>
+
+	<!-- Show us the SOAP data -->
+    <logger name="org.apache.cxf.interceptor.LoggingOutInterceptor" >
+    	<level value="INFO"/>
+    </logger>
+    <logger name="org.apache.cxf.interceptor.LoggingInInterceptor" >
+    	<level value="INFO"/>
+    </logger>
+
+
+
+    <!-- ======================================================================
+      == Root log settings.
+      -->
+    <root>
+        <priority value="INFO" />
+        <appender-ref ref="FILE" />
+    </root>
+
+</log4j:configuration>
