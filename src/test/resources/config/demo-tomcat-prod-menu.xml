@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:util="http://www.springframework.org/schema/util"
+  xmlns:task="http://www.springframework.org/schema/task"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util-3.0.xsd
+        http://www.springframework.org/schema/task
+   	    http://www.springframework.org/schema/task/spring-task-3.0.xsd">
+
+
+
+	<!-- Start prodNode list item 5 - TOMCAT -->
+	<bean id="tomcat_prod_menu" class="slina.mb.menu.MenuNodeImpl">
+		<property name="state" value="close" />
+		<property name="nodeType" value="Branch" />
+		<property name="menuTitle" value="Tomcat" />
+		<property name="icon" value="images2/folder1.png" />
+
+		<property name="children">
+			<list>
+				<bean id="prodTomcatApp10menu" class="slina.mb.menu.MenuNodeImpl">
+					<property name="menuTitle" value="App 10" />
+					<property name="icon" value="images2/file2.png" />
+					<property name="nodeType" value="Leaf" />
+					<property name="id" value="600" />
+					<property name="logFilePathList">
+						<list>
+							<ref bean="prodTomcatApp10Log" />
+						</list>
+					</property>
+				</bean>
+
+				<bean id="prodTomcatApp11menu" class="slina.mb.menu.MenuNodeImpl">
+					<property name="menuTitle" value="App 11" />
+					<property name="icon" value="images2/file2.png" />
+					<property name="nodeType" value="Leaf" />
+					<property name="id" value="601" />
+					<property name="logFilePathList">
+						<list>
+							<ref bean="prodTomcatApp11Log" />
+						</list>
+					</property>
+				</bean>
+
+				<bean id="prodTomcatApp3menu" class="slina.mb.menu.MenuNodeImpl">
+					<property name="menuTitle" value="App 3" />
+					<property name="icon" value="images2/file2.png" />
+					<property name="nodeType" value="Leaf" />
+					<property name="id" value="602" />
+					<property name="logFilePathList">
+						<list>
+							<ref bean="prodTomcatApp3Log" />
+						</list>
+					</property>
+				</bean>
+
+				<bean id="prodTomcatApp5menu" class="slina.mb.menu.MenuNodeImpl">
+					<property name="menuTitle" value="App 5" />
+					<property name="icon" value="images2/file2.png" />
+					<property name="nodeType" value="Leaf" />
+					<property name="id" value="603" />
+					<property name="logFilePathList">
+						<list>
+							<ref bean="prodTomcatApp5Log" />
+						</list>
+					</property>
+				</bean>
+
+				<bean id="prodTomcatApp6menu" class="slina.mb.menu.MenuNodeImpl">
+					<property name="menuTitle" value="App 6" />
+					<property name="icon" value="images2/file2.png" />
+					<property name="nodeType" value="Leaf" />
+					<property name="id" value="604" />
+					<property name="logFilePathList">
+						<list>
+							<ref bean="prodTomcatApp6Log" />
+						</list>
+					</property>
+				</bean>
+
+				<bean id="prodTomcatDefaultMenu" class="slina.mb.menu.MenuNodeImpl">
+					<property name="menuTitle" value="Default Log" />
+					<property name="icon" value="images2/file2.png" />
+					<property name="nodeType" value="Leaf" />
+					<property name="id" value="605" />
+					<property name="logFilePathList">
+						<list>
+							<ref bean="prodTomcatDefaultLog" />
+						</list>
+					</property>
+				</bean>
+
+				<bean id="prodTomcatStdoutMenu" class="slina.mb.menu.MenuNodeImpl">
+					<property name="menuTitle" value="StdOut Log" />
+					<property name="icon" value="images2/file2.png" />
+					<property name="nodeType" value="Leaf" />
+					<property name="id" value="606" />
+					<property name="logFilePathList">
+						<list>
+							<ref bean="prodTomcatStdoutLog" />
+						</list>
+					</property>
+				</bean>
+
+
+			</list>
+		</property>
+	</bean>
+ 		
+</beans>

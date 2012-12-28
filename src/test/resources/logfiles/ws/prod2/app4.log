@@ -1,0 +1,10 @@
+12-10-01 09:52:48,763 ERROR org.apache.jk.server.JkCoyoteHandler Class:org.apache.jk.server.JkCoyoteHandler Method:action: Line:506 - Error in action code java.net.SocketException: Connection reset by peer: socket write error
+at java.net.SocketOutputStream.socketWrite0(Native Method)
+12-10-02 11:52:53,626 DEBUG org.apache.jk.server.JkCoyoteHandler Class:org.apache.jk.server.JkCoyoteHandler Method:doWrite: Line:250 - doWrite 0 8184 8
+12-10-02 11:52:53,626 DEBUG org.apache.jk.common.ChannelSocket Class:org.apache.jk.common.ChannelSocket Method:send: Line:503 - send() 16 3
+12-10-02 11:52:56,782 DEBUG org.apache.coyote.tomcat5.CoyoteAdapter Class:org.apache.coyote.tomcat5.CoyoteAdapter Method:parseSessionCookiesId: Line:384 -  Requested cookie session id is 68C57B6E00C982C510ACFE2848C5F4DE
+12-11-01 09:52:48,763 ERROR org.apache.jk.server.JkCoyoteHandler Class:org.apache.jk.server.JkCoyoteHandler Method:action: Line:506 - Error in action code java.net.SocketException: Connection reset by peer: socket write error
+at java.net.SocketOutputStream.socketWrite0(Native Method)
+12-11-02 11:52:53,626 DEBUG org.apache.jk.server.JkCoyoteHandler Class:org.apache.jk.server.JkCoyoteHandler Method:doWrite: Line:250 - doWrite 0 8184 8
+12-11-02 11:52:53,626 DEBUG org.apache.jk.common.ChannelSocket Class:org.apache.jk.common.ChannelSocket Method:send: Line:503 - send() 16 3
+12-11-02 11:52:56,782 DEBUG org.apache.coyote.tomcat5.CoyoteAdapter Class:org.apache.coyote.tomcat5.CoyoteAdapter Method:parseSessionCookiesId: Line:384 -  Requested cookie session id is 68C57B6E00C982C510ACFE2848C5F4DE

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:util="http://www.springframework.org/schema/util"
+  xmlns:task="http://www.springframework.org/schema/task"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util-3.0.xsd
+        http://www.springframework.org/schema/task
+   	    http://www.springframework.org/schema/task/spring-task-3.0.xsd">
+   	    
+   	    
+<!-- *********************  Production  menus ******************************************************* -->
+
+	<import resource="demo-app-menu.xml"/>
+	<import resource="demo-app-prod-logs.xml"/>
+	<import resource="demo-tomcat-prod-menu.xml"/>
+	<import resource="demo-tomcat-prod.xml"/>
+	<import resource="demo-ws-menu.xml"/>
+	<import resource="demo-ws-prod-logs.xml"/>
+	<import resource="logParsers.xml"/>
+	<!-- 
+		uncomment to down load log files from other servers.
+	
+	<import resource="demo-cron-config.xml"/>
+	
+	 -->
+	<bean id="menuConverter" class="slina.mb.work.LogServiceImpl" init-method="init" >
+		<property name="prodMenuList" >
+			 <list> 
+			 	<ref bean="prodMenuNode"/>
+			 </list>			 
+		</property>
+		<property name="logParserMap" ref="logParserMap" />
+		<property name="logFileReader" ref="logFileReader" />
+<!-- 		<property name="prodAdvanceWarning" ref="prodWarning" /> -->
+	</bean>
+	
+	
+	<bean id="prodMenuNode" class="slina.mb.menu.MenuNodeImpl">
+		<property name="state" value="close" />
+		<property name="menuTitle" value="Production" />	
+		<property name="nodeType" value="ParentNode" />	
+	   <property name="children" >
+ 		  <list> 
+				    <ref bean="app_prod_menu"/>
+	    			<ref bean="ws_prod_menu"/> 	
+	    			<ref bean="tomcat_prod_menu"/> 		 		 	  
+ 		  </list>
+ 	   </property>
+ 	</bean>
+
+
+   	    
+   	    
+ </beans>

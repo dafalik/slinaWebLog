@@ -1,0 +1,10 @@
+[11/2/14 8:23:59:400 CDT] 00000065 SpnegoHandler W com.ibm.ws.security.spnego.SpnegoHandler handleRequest CWSPN0021E: No delegated credentials were found for user: CHARDK1@IGA.BZ.,
+[11/2/14 8:24:07:258 CDT] 00000069 ClientSideUse I   UserCredentialsClientInterceptor handleMessage invoked,
+[11/2/14 8:57:58:221 CDT] 00000007 TimeoutManage I   WTRN0134I: When the timeout occurred the thread with which the transaction is, or was most recently, associated was Thread[WebContainer : 33,5,main]. The stack trace of this thread when the timeout occurred was: ,
+[11/2/14 9:59:31:820 CDT] 00000014 HttpConnectio W org.apache.commons.httpclient.HttpConnection releaseConnection HttpConnectionManager is null.  Connection cannot be released.,
+[11/2/14 13:56:36:534 CST] 00002b37 ExchangeSyncI W   [sa <ExchangeFolder:OID:1:V32:BC85AD2FDCC14917B03B50160F9A8243>] Synchronization completed, but some instances could not be synchronized.
+[11/2/14 13:23:59:400 CDT] 00000065 SpnegoHandler W com.ibm.ws.security.spnego.SpnegoHandler handleRequest CWSPN0021E: No delegated credentials were found for user: CHARDK1@IGA.BZ.,
+[11/2/14 13:24:07:258 CDT] 00000069 ClientSideUse I   UserCredentialsClientInterceptor handleMessage invoked,
+[11/2/14 13:57:58:221 CDT] 00000007 TimeoutManage I   WTRN0134I: When the timeout occurred the thread with which the transaction is, or was most recently, associated was Thread[WebContainer : 33,5,main]. The stack trace of this thread when the timeout occurred was: ,
+[11/2/14 13:59:31:820 CDT] 00000014 HttpConnectio W org.apache.commons.httpclient.HttpConnection releaseConnection HttpConnectionManager is null.  Connection cannot be released.,
+[11/2/14 14:56:36:534 CST] 00002b37 ExchangeSyncI W   [sa <ExchangeFolder:OID:1:V32:BC85AD2FDCC14917B03B50160F9A8243>] Synchronization completed, but some instances could not be synchronized.

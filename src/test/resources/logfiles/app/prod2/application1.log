@@ -1,0 +1,59 @@
+[2012-11-02 04:18:49,998] Imx-9 WARN  srvInterface.ConnexTester - The following exception occured while testing Connex: blina1/:55052, 1851846129998
+java.io.EOFException
+	at blina.emen.EWayConnex.read(EWayConnex.java:805)
+	at blina.emen.EWayConnex.receiveAck(EWayConnex.java:188)
+	at blina.service.Connexs.eway.ReliableEWayConnex.sendRequest(ReliableEWayConnex.java:88)
+	at blina.service.Interface.execute(Interface.java:186)
+	at blina.service.ConnexTester.verifyAvailableConnex(ConnexTester.java:116)
+	at blina.service.pools.ConnexPool.testAvailableConnexs(ConnexPool.java:860)
+	at blina.service.pools.ConnexPool.testPool(ConnexPool.java:890)
+	at blina.service.srvInterfaceManager.testPool(srvInterfaceManager.java:268)
+	at blina.service.ConnexTester.run(ConnexTester.java:66)
+	at java.util.ImxThread.mainLoop(Imx.java:588)
+	at java.util.ImxThread.run(Imx.java:488)
+[2012-11-02 04:88:49,995] Imx-9 WARN  srvInterface.ConnexTester - The following exception occured while testing Connex: blina1/:55058, 1851848929999
+java.io.EOFException
+	at blina.emen.EWayConnex.read(EWayConnex.java:805)
+	at blina.emen.EWayConnex.receiveAck(EWayConnex.java:188)
+	at blina.service.Connexs.eway.ReliableEWayConnex.sendRequest(ReliableEWayConnex.java:88)
+	at blina.service.Interface.execute(Interface.java:186)
+	at blina.service.ConnexTester.verifyAvailableConnex(ConnexTester.java:116)
+	at blina.service.pools.ConnexPool.testAvailableConnexs(ConnexPool.java:860)
+	at blina.service.pools.ConnexPool.testPool(ConnexPool.java:890)
+	at blina.service.srvInterfaceManager.testPool(srvInterfaceManager.java:268)
+	at blina.service.ConnexTester.run(ConnexTester.java:66)
+	at java.util.ImxThread.mainLoop(Imx.java:588)
+	at java.util.ImxThread.run(Imx.java:488)
+[2012-11-02 04:48:49,996] Imx-9 WARN  srvInterface.ConnexTester - The following exception occured while testing Connex: blina1/:55054, 1851848829998
+java.io.EOFException
+	at blina.emen.EWayConnex.read(EWayConnex.java:805)
+	at blina.emen.EWayConnex.receiveAck(EWayConnex.java:188)
+	at blina.service.Connexs.eway.ReliableEWayConnex.sendRequest(ReliableEWayConnex.java:88)
+	at blina.service.Interface.execute(Interface.java:186)
+	at blina.service.ConnexTester.verifyAvailableConnex(ConnexTester.java:116)
+	at blina.service.pools.ConnexPool.testAvailableConnexs(ConnexPool.java:860)
+	at blina.service.pools.ConnexPool.testPool(ConnexPool.java:890)
+	at blina.service.srvInterfaceManager.testPool(srvInterfaceManager.java:268)
+	at blina.service.ConnexTester.run(ConnexTester.java:66)
+	at java.util.ImxThread.mainLoop(Imx.java:588)
+	at java.util.ImxThread.run(Imx.java:488)
+[2012-11-02 09:01:20,015] Default : 51 WARN  blina.action.Login - Received the error codes= 88CF0428 from webseal
+[2012-11-02 09:01:20,015] Default : 51 ERROR blina.action.Login - 192.168.1.1
+[2012-11-02 10:41:42,582] Default : 44 WARN  blina.action.Login - Received the error codes= 0x182120c8 from webseal
+[2012-11-02 10:41:42,582] Default : 44 ERROR blina.action.Login -192.168.121
+[2012-11-02 10:45:04,884] Default : 52 ERROR tim.Person - User id: smarta1 already exists in ITIM.
+[2012-11-02 10:45:04,884] Default : 52 ERROR impl.BaseWorkImpl - User id: dosver1 is already in use. User id: smarta1 already exists in ITIM.
+[2012-11-02 10:45:04,885] Default : 52 ERROR actions.Workflow5Action - User registration service failure:
+[2012-11-02 10:45:04,885] Default : 52 ERROR actions.Workflow5Action - Error code: error.cim.uid.inuse Error message: User id: dosvar is already in use. User id: dosaxx already exists in ITIM.
+[2012-11-02 10:45:44,022] Default : 48 WARN  impl.ServiceBuilderImpl - Request Header not currently being set - need correct values
+[2012-11-02 10:48:00,818] Default : 52 WARN  impl.ServiceBuilderImpl - Due to XSD requirements, data objects are being populated on this request
+[2012-11-02 10:48:20,469] Default : 52 WARN  blina.action.Login - Received the error codes= 0x182120c8 from webseal
+[2012-11-02 10:48:20,469] Default : 52 ERROR blina.action.Login - 192.168.1.1
+[2012-11-02 10:55:14,180] Default : 52 WARN  blina.action.Login - Received the error codes= 88CF0428 from webseal
+[2012-11-02 10:55:14,180] Default : 52 ERROR blina.action.Login -192.168.121
+[2012-11-02 11:41:58,824] Default : 49 WARN  blina.action.Login - Received the error codes= 0x182120c8 from webseal
+[2012-11-02 11:41:58,824] Default : 49 ERROR blina.action.Login -192.168.121
+[2012-11-02 11:42:08,188] Default : 49 WARN  blina.action.Login - Received the error codes= 0x182120c8 from webseal
+[2012-11-02 11:42:08,188] Default : 49 ERROR blina.action.Login -192.168.121
+[2012-11-02 11:58:01,624] Default : 44 WARN  blina.action.Login - Received the error codes= 88CF0428 from webseal
+[2012-11-02 11:58:01,624] Default : 44 ERROR blina.action.Login -192.168.121

@@ -1,0 +1,8 @@
+[2012-11-03 09:31:34,971  ] INFO   Log4jLoggerImpl -- Pool: Inquiry; Active Connections: 0; Available Connections: 1; Min Connections: 1; Max Connections: 15,
+Exception: logging stack trace goes here,
+[2012-11-03 09:31:34,973  ] INFO   Log4jLoggerImpl -- Service 'verifyconnection', Initialize=0, Format=0, Send=1, Receive=1, Parse=0, WS=2, Total=2,
+[2012-11-03 09:38:47,084  ] INFO   AuthUserDetailsService -- Authticating garmix@mydom.com,
+[2012-11-03 09:38:47,112  ] INFO   LdapUserDetailsMapper -- Mapping user details from context with DN: cn=gaviz\\, kiyus,ou=Sales,ou=Accounts,ou=tricx,dc=ytx,dc=com,
+[2012-11-03 09:38:47,112  ] INFO   LdapUserDetailsMapper -- essence: security.ldap.userdetails.LdapUserDetailsImpl@fe305159: Dn: cn=gaviz\\, kiyus,ou=Sales,ou=Accounts,ou=tricx,dc=ytx,dc=com; Username: gavizk@ytx.com; Enabled: true; AccountNonExpired: true; CredentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_SALES,					 
+[2012-11-03 09:38:47,112  ] INFO   PreAuthUserDetailsService -- loadUserByUsername  security.ldap.userdetails.LdapUserDetailsImpl@fe305159: Dn: cn=gaviz\\, kiyus,ou=Sales,ou=Accounts,ou=tricx,dc=ytx,dc=com; Username: gavizk@ytx.com; Username: gavizk@ytx.com; Enabled: true; AccountNonExpired: true; CredentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_SALES,
+[2012-11-03 09:38:47,114  ] INFO   AjaxController -- client locale in session: fr 

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:util="http://www.springframework.org/schema/util"
+  xmlns:task="http://www.springframework.org/schema/task"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util-3.0.xsd
+        http://www.springframework.org/schema/task
+   	    http://www.springframework.org/schema/task/spring-task-3.0.xsd">
+
+<!--    Start Production CRON jobs configuration -->
+
+ <!-- ************************************ Tomcat Production ********************************************* -->   
+   	    
+ 				<bean id="tomcatProdLogs" class="slina.mb.io.SourceInfoImpl">
+     					<property name="logFileList" >     					
+ 				     		 <list>
+            					<ref bean="prodTomcatApp10Log"/>
+            					<ref bean="prodTomcatApp11Log"/>
+            					<ref bean="prodTomcatApp3Log"/>
+            					<ref bean="prodTomcatApp5Log"/>     
+            					<ref bean="prodTomcatApp6Log"/>
+            					<ref bean="prodTomcatDefaultLog"/>
+            					<ref bean="prodTomcatStdoutLog"/>    					         		   	      			         					       					
+       						 </list>   					
+     					</property>
+   				</bean>
+
+
+                <bean id="tomcatProdWorker" class="slina.mb.cron.SmbWorkerImpl">
+     					<property name="fileSizeLmit" value="512000" />
+     					<property name="sourceInfo" ref="tomcatProdLogs" />
+     					<property name="winsServer" value="192.168.1.1" />
+     					<property name="serverInfo" ref="tomcatProdServer" />
+   				</bean>  	    
+   	    
+ 
+  <!-- ************************************   Production 1 & WS server********************************************* -->   
+ 
+   	    
+   				<bean id="prod1AppWSLogs" class="slina.mb.io.SourceInfoImpl">
+     					<property name="logFileList" >     					
+ 				     		 <list>
+            					<ref bean="prod1SysoutLog"/>
+            					<ref bean="prod1App1Log"/>
+            					<ref bean="prod1App8Log"/>
+            					<ref bean="prod1App9Log"/>
+            					<ref bean="prod1Application1Log"/>
+            					<ref bean="prod1Application2Log"/>     
+            					<ref bean="prod1WSSysoutLog"/>
+            					<ref bean="prod1WSApp2Log"/>
+            					<ref bean="prod1WSApp4Log"/>
+            					<ref bean="prod1WSApp7Log"/>          					 					        					
+       						 </list>   					
+     					</property>
+   				</bean>		    
+   	    
+	 	  <bean id="prod1AppWSWorker" class="slina.mb.cron.CronSSHFileWorkerImpl" >
+		   	<property name="sourceInfo" ref="prod1AppWSLogs" />
+		   	<property name="serverInfo" ref="prod1AppServer" />
+		  </bean>
+ 
+ 
+  <!-- ************************************  IWA and WS Production 2 ********************************************* -->   
+ 
+   				<bean id="prod2AppWSLogs" class="slina.mb.io.SourceInfoImpl">
+     					<property name="logFileList" >     					
+ 				     		 <list>
+            					<ref bean="prod2SysoutLog"/>
+            					<ref bean="prod2App1Log"/>
+            					<ref bean="prod2App8Log"/>
+            					<ref bean="prod2App9Log"/>
+            					<ref bean="prod2Application1Log"/>
+            					<ref bean="prod2Application2Log"/>           					
+            					<ref bean="prod2WSSysoutLog"/>
+            					<ref bean="prod2WSApp2Log"/>
+            					<ref bean="prod2WSApp4Log"/>
+            					<ref bean="prod2WSApp7Log"/>        					        					
+       						 </list>   					
+     					</property>
+   				</bean>		    
+   	    
+	 	  <bean id="prod2AppWSWorker" class="slina.mb.cron.CronSSHFileWorkerImpl" >
+		   	<property name="sourceInfo" ref="prod2AppWSLogs" />
+		   	<property name="serverInfo" ref="prod2AppServer" />
+		  </bean>
+   
+  
+  
+  <!-- ************************************  Production Warnings ********************************************* -->   
+	 	  <bean id="prodWarning" class="slina.mb.cron.AdvanceWarningImpl" >
+		   	<property name="logFileReader" ref="logFileReader" />
+		   	<property name="logParserMap" ref="logParserMap" />
+	     	<property name="fileWorkersList" >
+     		 	<list>
+       				<ref bean="tomcatProdWorker"/>   
+       				<ref bean="prod1AppWSWorker"/>  
+       				<ref bean="prod2AppWSWorker"/>         				   				                					        					
+  				</list> 	     	
+	     	</property>
+		  </bean>     
+  
+    
+	   
+	  <!-- An interval-based trigger where the interval is measured from the completion time of the previous task. 
+	  <task:scheduled ref="fixedDelayTask" method="work" fixed-delay="5000"/>
+	   -->
+	   
+	  <!-- An interval-based trigger where the interval is measured from the start time of the previous task.
+	  <task:scheduled ref="fixedRateTask" method="work" fixed-rate="5000"/>
+	   -->
+	   
+	  <!-- A cron-based trigger.  -->
+   
+	   
+	 <task:scheduled-tasks scheduler="taskScheduler">
+	 	 <task:scheduled ref="tomcatProdWorker" method="work" cron="0 */10 * * * ?"/>
+		 <task:scheduled ref="prod1AppWSWorker" method="work" cron="0 */15 * * * ?"/>	 
+ 		 <task:scheduled ref="prod2AppWSWorker" method="work" cron="0 */15 * * * ?"/>	
+	 </task:scheduled-tasks>
+
+
+	  
+	  
+	 <!-- Defines a ThreadPoolTaskScheduler instance with configurable pool size. -->
+	 <task:scheduler id="taskScheduler" pool-size="3"/>       	    
+   	    
+
+   	    
+</beans>

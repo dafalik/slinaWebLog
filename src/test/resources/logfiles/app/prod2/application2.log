@@ -1,0 +1,522 @@
+[2012-11-02 00:11:40,507] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1198
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1198 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 00:26:40,568] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1199
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1199 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 00:41:40,763] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1200
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1200 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 00:56:40,820] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1201
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1201 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 01:11:40,876] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1202
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1202 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 01:26:41,150] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1203
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1203 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 01:41:41,207] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1204
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1204 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 01:56:41,264] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1205
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1205 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 02:11:41,321] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1206
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1206 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 02:26:41,378] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1207
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1207 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 02:41:41,429] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1208
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1208 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 02:56:41,485] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1209
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1209 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 03:11:41,542] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1210
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1210 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 03:26:41,623] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1211
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1211 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 03:41:41,701] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1212
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1212 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 03:56:41,778] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1213
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1213 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 04:11:41,860] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1214
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1214 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 04:26:41,939] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1215
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1215 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 04:41:42,194] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1216
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1216 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 04:48:19,084] IMer-9 WARN  srbInterface.ConnectionTester - The following exception occured while testing connection: SSAIAP2/10.200.222.9:26054, 1351848799090
+java.io.EOFException
+	at hlina.connection.eway.EWayConnection.read(EWayConnection.java:305)
+	at hlina.connection.eway.EWayConnection.receiveAck(EWayConnection.java:178)
+	at hlina.connection.eway.ReliableEWayConnection.sendRequest(ReliableEWayConnection.java:38)
+	at hlina.srbInterfaceProvider.execute(srbInterfaceProvider.java:186)
+	at hlina.service.ConnectionTester.verifyAvailableConnection(ConnectionTester.java:116)
+	at hlina.pools.pools.BoundedConnectionPool.testAvailableConnections(BoundedConnectionPool.java:360)
+	at hlina.pools.pools.BoundedConnectionPool.testPool(BoundedConnectionPool.java:390)
+	at hlina.service.srbInterfaceManager.testPool(srbInterfaceManager.java:267)
+	at hlina.service.ConnectionTester.run(ConnectionTester.java:66)
+	at java.util.IMerThread.mainLoop(IMer.java:537)
+	at java.util.IMerThread.run(IMer.java:487)
+[2012-11-02 04:56:42,284] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1217
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1217 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 05:11:42,367] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1218
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1218 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 05:26:45,123] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1219
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1219 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 05:41:45,199] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1220
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1220 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 05:56:48,350] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1221
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1221 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 06:11:48,410] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1222
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1222 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 06:26:48,464] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1223
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1223 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 06:41:48,529] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1224
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1224 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 06:56:48,584] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1225
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1225 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 07:11:48,641] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1226
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1226 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 07:21:01,922] Default : 0 WARN  im.hlina.UserServiceBuilderImpl - Due to XSD requirements, data objects are being populated on this request
+[2012-11-02 07:26:48,731] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1227
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1227 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 07:32:59,134] Default : 11 WARN  hlina.MarketingServiceBuilderImpl - Request Header not currently being set - need correct values
+[2012-11-02 07:41:48,794] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1228
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1228 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 07:56:48,850] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1229
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1229 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 08:08:44,466] Default : 12 WARN  im.hlina.UserServiceBuilderImpl - Due to XSD requirements, data objects are being populated on this request
+[2012-11-02 08:11:48,916] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1230
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1230 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 08:26:48,971] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1231
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1231 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 08:41:49,251] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1232
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1232 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 08:48:29,206] Default : 9 WARN  im.hlina.UserServiceBuilderImpl - Due to XSD requirements, data objects are being populated on this request
+[2012-11-02 08:48:29,380] Default : 9 WARN  hlina.MarketingServiceBuilderImpl - Request Header not currently being set - need correct values
+[2012-11-02 08:56:49,306] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1233
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1233 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 09:07:12,065] Default : 9 WARN  im.hlina.UserServiceBuilderImpl - Due to XSD requirements, data objects are being populated on this request
+[2012-11-02 09:11:49,361] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1234
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1234 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 09:26:49,421] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1235
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1235 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 09:41:49,476] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1236
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1236 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 09:56:49,529] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1237
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1237 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 10:11:49,583] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1238
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1238 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 10:26:49,636] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1239
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1239 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 10:27:33,598] Default : 12 WARN  im.hlina.UserServiceBuilderImpl - Due to XSD requirements, data objects are being populated on this request
+[2012-11-02 10:28:08,701] Default : 12 WARN  im.hlina.UserServiceBuilderImpl - Due to XSD requirements, data objects are being populated on this request
+[2012-11-02 10:28:41,529] Default : 9 ERROR impl.CABaseScriptsImpl - No users found processing user search by client number: 26586689
+[2012-11-02 10:28:41,529] Default : 9 ERROR exception.CAStrutsExceptionHandler - A struts action threw an exception:
+java.lang.IllegalStateException
+	at cd.ibx.ws.webcontainer.webapp.WebAppDispatcherContext.sendRedirectWithStatusCode(WebAppDispatcherContext.java:492)
+	at cd.ibx.ws.webcontainer.webapp.WebAppDispatcherContext.sendRedirect(WebAppDispatcherContext.java:449)
+	at cd.ibx.ws.webcontainer.srt.SRTServletResponse.sendRedirect(SRTServletResponse.java:1036)
+	at hlina.mb.common.ui.actions.AbstractDispatchPRGAction.redirectToSelf(AbstractDispatchPRGAction.java:238)
+	at hlina.ui.actions.CAUserSearchAction.searchUsers(CAUserSearchAction.java:284)
+	at hlina.ui.actions.CAUserSearchAction.find(CAUserSearchAction.java:91)
+	at sun.reflect.GeneratedMethodAccessor187.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:618)
+	at org.apache.struts.actions.DispatchAction.dispatchMethod(DispatchAction.java:270)
+	at org.apache.struts.actions.DispatchAction.execute(DispatchAction.java:187)
+	at org.apache.struts.actions.LookupDispatchAction.execute(LookupDispatchAction.java:150)
+	at hlina.mb.common.ui.actions.AbstractDispatchPRGAction.execute(AbstractDispatchPRGAction.java:91)
+	at hlina.mb.common.ui.actions.AbstractDispatchPRGAction$$FastClassByCGLIB$$3b491b6a.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at org.springframework.aop.framework.Cglib2AopProxy$DynamicAdvisedInterceptor.intercept(Cglib2AopProxy.java:628)
+	at hlina.ui.actions.CAUserSearchAction$$EnhancerByCGLIB$$3fe6bdfd.execute(<generated>)
+	at org.springframework.web.struts.DelegatingActionProxy.execute(DelegatingActionProxy.java:110)
+	at org.apache.struts.action.RequestProcessor.processActionPerform(RequestProcessor.java:431)
+	at org.apache.struts.action.RequestProcessor.process(RequestProcessor.java:236)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doPost(ActionServlet.java:432)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:763)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:856)
+	at cd.ibx.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1143)
+	at cd.ibx.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:591)
+	at cd.ibx.ws.wswebcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:481)
+	at cd.ibx.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:90)
+	at cd.ibx.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:748)
+	at cd.ibx.ws.wswebcontainer.WebContainer.handleRequest(WebContainer.java:1466)
+	at cd.ibx.ws.webcontainer.channel.WCChannelLink.ready(WCChannelLink.java:119)
+	at cd.ibx.ws.http.channel.inbound.impl.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:458)
+	at cd.ibx.ws.http.channel.inbound.impl.HttpInboundLink.handleNewInformation(HttpInboundLink.java:387)
+	at cd.ibx.ws.http.channel.inbound.impl.HttpInboundLink.ready(HttpInboundLink.java:267)
+	at cd.ibx.ws.ssl.channel.impl.SSLConnectionLink.determineNextChannel(SSLConnectionLink.java:1037)
+	at cd.ibx.ws.ssl.channel.impl.SSLConnectionLink$MyReadCompletedCallback.complete(SSLConnectionLink.java:644)
+	at cd.ibx.ws.ssl.channel.impl.SSLReadServiceContext$SSLReadCompletedCallback.complete(SSLReadServiceContext.java:1818)
+	at cd.ibx.ws.tcp.channel.impl.AioReadCompletionListener.futureCompleted(AioReadCompletionListener.java:165)
+	at cd.ibx.io.async.AbstractAsyncFuture.invokeCallback(AbstractAsyncFuture.java:217)
+	at cd.ibx.io.async.AsyncChannelFuture.fireCompletionActions(AsyncChannelFuture.java:161)
+	at cd.ibx.io.async.AsyncFuture.completed(AsyncFuture.java:136)
+	at cd.ibx.io.async.ResultHandler.complete(ResultHandler.java:196)
+	at cd.ibx.io.async.ResultHandler.runEventProcessingLoop(ResultHandler.java:751)
+	at cd.ibx.io.async.ResultHandler$2.run(ResultHandler.java:881)
+	at cd.ibx.ws.util.ThreadPool$Worker.run(ThreadPool.java:1473)
+[2012-11-02 10:41:42,557] Default : 0 WARN  im.hlina.UserServiceBuilderImpl - Due to XSD requirements, data objects are being populated on this request
+[2012-11-02 10:41:49,697] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1240
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1240 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 10:52:09,135] Default : 11 WARN  im.hlina.UserServiceBuilderImpl - Due to XSD requirements, data objects are being populated on this request
+[2012-11-02 10:52:09,311] Default : 11 WARN  hlina.MarketingServiceBuilderImpl - Request Header not currently being set - need correct values
+[2012-11-02 10:52:15,644] Default : 12 WARN  im.hlina.UserServiceBuilderImpl - Due to XSD requirements, data objects are being populated on this request
+[2012-11-02 10:53:08,264] Default : 10 WARN  im.hlina.UserServiceBuilderImpl - Due to XSD requirements, data objects are being populated on this request
+[2012-11-02 10:53:08,441] Default : 10 WARN  hlina.MarketingServiceBuilderImpl - Request Header not currently being set - need correct values
+[2012-11-02 10:56:49,750] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1241
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1241 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 11:00:34,100] Default : 10 WARN  im.hlina.UserServiceBuilderImpl - Due to XSD requirements, data objects are being populated on this request
+[2012-11-02 11:11:49,812] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1242
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1242 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 11:12:07,597] Default : 11 ERROR impl.CABaseScriptsImpl - No users found processing user search by client number: 3205368
+[2012-11-02 11:12:07,597] Default : 11 ERROR exception.CAStrutsExceptionHandler - A struts action threw an exception:
+java.lang.IllegalStateException
+	at cd.ibx.ws.webcontainer.webapp.WebAppDispatcherContext.sendRedirectWithStatusCode(WebAppDispatcherContext.java:492)
+	at cd.ibx.ws.webcontainer.webapp.WebAppDispatcherContext.sendRedirect(WebAppDispatcherContext.java:449)
+	at cd.ibx.ws.webcontainer.srt.SRTServletResponse.sendRedirect(SRTServletResponse.java:1036)
+	at hlina.mb.common.ui.actions.AbstractDispatchPRGAction.redirectToSelf(AbstractDispatchPRGAction.java:238)
+	at hlina.ui.actions.CAUserSearchAction.searchUsers(CAUserSearchAction.java:284)
+	at hlina.ui.actions.CAUserSearchAction.find(CAUserSearchAction.java:91)
+	at sun.reflect.GeneratedMethodAccessor187.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:618)
+	at org.apache.struts.actions.DispatchAction.dispatchMethod(DispatchAction.java:270)
+	at org.apache.struts.actions.DispatchAction.execute(DispatchAction.java:187)
+	at org.apache.struts.actions.LookupDispatchAction.execute(LookupDispatchAction.java:150)
+	at hlina.mb.common.ui.actions.AbstractDispatchPRGAction.execute(AbstractDispatchPRGAction.java:91)
+	at hlina.mb.common.ui.actions.AbstractDispatchPRGAction$$FastClassByCGLIB$$3b491b6a.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at org.springframework.aop.framework.Cglib2AopProxy$DynamicAdvisedInterceptor.intercept(Cglib2AopProxy.java:628)
+	at hlina.ui.actions.CAUserSearchAction$$EnhancerByCGLIB$$3fe6bdfd.execute(<generated>)
+	at org.springframework.web.struts.DelegatingActionProxy.execute(DelegatingActionProxy.java:110)
+	at org.apache.struts.action.RequestProcessor.processActionPerform(RequestProcessor.java:431)
+	at org.apache.struts.action.RequestProcessor.process(RequestProcessor.java:236)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doPost(ActionServlet.java:432)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:763)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:856)
+	at cd.ibx.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1143)
+	at cd.ibx.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:591)
+	at cd.ibx.ws.wswebcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:481)
+	at cd.ibx.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:90)
+	at cd.ibx.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:748)
+	at cd.ibx.ws.wswebcontainer.WebContainer.handleRequest(WebContainer.java:1466)
+	at cd.ibx.ws.webcontainer.channel.WCChannelLink.ready(WCChannelLink.java:119)
+	at cd.ibx.ws.http.channel.inbound.impl.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:458)
+	at cd.ibx.ws.http.channel.inbound.impl.HttpInboundLink.handleNewInformation(HttpInboundLink.java:387)
+	at cd.ibx.ws.http.channel.inbound.impl.HttpICLReadCallback.complete(HttpICLReadCallback.java:102)
+	at cd.ibx.ws.ssl.channel.impl.SSLReadServiceContext$SSLReadCompletedCallback.complete(SSLReadServiceContext.java:1818)
+	at cd.ibx.ws.tcp.channel.impl.AioReadCompletionListener.futureCompleted(AioReadCompletionListener.java:165)
+	at cd.ibx.io.async.AbstractAsyncFuture.invokeCallback(AbstractAsyncFuture.java:217)
+	at cd.ibx.io.async.AsyncChannelFuture.fireCompletionActions(AsyncChannelFuture.java:161)
+	at cd.ibx.io.async.AsyncFuture.completed(AsyncFuture.java:136)
+	at cd.ibx.io.async.ResultHandler.complete(ResultHandler.java:196)
+	at cd.ibx.io.async.ResultHandler.runEventProcessingLoop(ResultHandler.java:751)
+	at cd.ibx.io.async.ResultHandler$2.run(ResultHandler.java:881)
+	at cd.ibx.ws.util.ThreadPool$Worker.run(ThreadPool.java:1473)
+[2012-11-02 11:18:04,296] Default : 9 WARN  im.hlina.UserServiceBuilderImpl - Due to XSD requirements, data objects are being populated on this request
+[2012-11-02 11:26:49,863] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1243
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1243 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 11:28:22,819] Default : 0 WARN  im.hlina.UserServiceBuilderImpl - Due to XSD requirements, data objects are being populated on this request
+[2012-11-02 11:30:19,290] Default : 10 ERROR impl.CABaseScriptsImpl - No users found processing user search by client number: 3151382
+[2012-11-02 11:30:19,290] Default : 10 ERROR exception.CAStrutsExceptionHandler - A struts action threw an exception:
+java.lang.IllegalStateException
+	at cd.ibx.ws.webcontainer.webapp.WebAppDispatcherContext.sendRedirectWithStatusCode(WebAppDispatcherContext.java:492)
+	at cd.ibx.ws.webcontainer.webapp.WebAppDispatcherContext.sendRedirect(WebAppDispatcherContext.java:449)
+	at cd.ibx.ws.webcontainer.srt.SRTServletResponse.sendRedirect(SRTServletResponse.java:1036)
+	at hlina.mb.common.ui.actions.AbstractDispatchPRGAction.redirectToSelf(AbstractDispatchPRGAction.java:238)
+	at hlina.ui.actions.CAUserSearchAction.searchUsers(CAUserSearchAction.java:284)
+	at hlina.ui.actions.CAUserSearchAction.find(CAUserSearchAction.java:91)
+	at sun.reflect.GeneratedMethodAccessor187.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:618)
+	at org.apache.struts.actions.DispatchAction.dispatchMethod(DispatchAction.java:270)
+	at org.apache.struts.actions.DispatchAction.execute(DispatchAction.java:187)
+	at org.apache.struts.actions.LookupDispatchAction.execute(LookupDispatchAction.java:150)
+	at hlina.mb.common.ui.actions.AbstractDispatchPRGAction.execute(AbstractDispatchPRGAction.java:91)
+	at hlina.mb.common.ui.actions.AbstractDispatchPRGAction$$FastClassByCGLIB$$3b491b6a.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at org.springframework.aop.framework.Cglib2AopProxy$DynamicAdvisedInterceptor.intercept(Cglib2AopProxy.java:628)
+	at hlina.ui.actions.CAUserSearchAction$$EnhancerByCGLIB$$3fe6bdfd.execute(<generated>)
+	at org.springframework.web.struts.DelegatingActionProxy.execute(DelegatingActionProxy.java:110)
+	at org.apache.struts.action.RequestProcessor.processActionPerform(RequestProcessor.java:431)
+	at org.apache.struts.action.RequestProcessor.process(RequestProcessor.java:236)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doPost(ActionServlet.java:432)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:763)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:856)
+	at cd.ibx.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1143)
+	at cd.ibx.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:591)
+	at cd.ibx.ws.wswebcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:481)
+	at cd.ibx.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:90)
+	at cd.ibx.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:748)
+	at cd.ibx.ws.wswebcontainer.WebContainer.handleRequest(WebContainer.java:1466)
+	at cd.ibx.ws.webcontainer.channel.WCChannelLink.ready(WCChannelLink.java:119)
+	at cd.ibx.ws.http.channel.inbound.impl.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:458)
+	at cd.ibx.ws.http.channel.inbound.impl.HttpInboundLink.handleNewInformation(HttpInboundLink.java:387)
+	at cd.ibx.ws.http.channel.inbound.impl.HttpInboundLink.ready(HttpInboundLink.java:267)
+	at cd.ibx.ws.ssl.channel.impl.SSLConnectionLink.determineNextChannel(SSLConnectionLink.java:1037)
+	at cd.ibx.ws.ssl.channel.impl.SSLConnectionLink$MyReadCompletedCallback.complete(SSLConnectionLink.java:644)
+	at cd.ibx.ws.ssl.channel.impl.SSLReadServiceContext$SSLReadCompletedCallback.complete(SSLReadServiceContext.java:1818)
+	at cd.ibx.ws.tcp.channel.impl.AioReadCompletionListener.futureCompleted(AioReadCompletionListener.java:165)
+	at cd.ibx.io.async.AbstractAsyncFuture.invokeCallback(AbstractAsyncFuture.java:217)
+	at cd.ibx.io.async.AsyncChannelFuture.fireCompletionActions(AsyncChannelFuture.java:161)
+	at cd.ibx.io.async.AsyncFuture.completed(AsyncFuture.java:136)
+	at cd.ibx.io.async.ResultHandler.complete(ResultHandler.java:196)
+	at cd.ibx.io.async.ResultHandler.runEventProcessingLoop(ResultHandler.java:751)
+	at cd.ibx.io.async.ResultHandler$2.run(ResultHandler.java:881)
+	at cd.ibx.ws.util.ThreadPool$Worker.run(ThreadPool.java:1473)
+[2012-11-02 11:40:25,558] Default : 9 WARN  hlina.MarketingServiceBuilderImpl - Request Header not currently being set - need correct values
+[2012-11-02 11:41:49,915] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1244
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1244 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 11:44:09,815] Default : 12 WARN  im.hlina.UserServiceBuilderImpl - Due to XSD requirements, data objects are being populated on this request
+[2012-11-02 11:48:15,695] Default : 12 WARN  im.hlina.UserServiceBuilderImpl - Due to XSD requirements, data objects are being populated on this request
+[2012-11-02 11:48:15,819] Default : 12 WARN  hlina.MarketingServiceBuilderImpl - Request Header not currently being set - need correct values
+[2012-11-02 11:49:35,523] Default : 12 WARN  im.hlina.UserServiceBuilderImpl - Due to XSD requirements, data objects are being populated on this request
+[2012-11-02 11:56:49,970] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1245
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1245 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)
+[2012-11-02 11:59:39,514] Default : 10 WARN  im.hlina.UserServiceBuilderImpl - Due to XSD requirements, data objects are being populated on this request
+[2012-11-02 11:59:39,688] Default : 10 WARN  hlina.MarketingServiceBuilderImpl - Request Header not currently being set - need correct values
+[2012-11-02 12:11:50,021] HIBeat daemon thread ERROR im.TivoliIdentityManagerImpl - doesUserIdExist: User does not exists UserIdNotThere_KeepConnectionAlive_1246
+java.lang.Exception: getPerson: PersonMO UserIdNotThere_KeepConnectionAlive_1246 not found in IM
+	at slim.im.TivoliIdentityManagerImpl.getPerson(TivoliIdentityManagerImpl.java:123)
+	at slim.im.TivoliIdentityManagerImpl.doesUserIdExist(TivoliIdentityManagerImpl.java:234)
+	at hlina.common.Care(IMHeartbeat.java:53)
+	at slim.cim.IMHeartbeat.run(IIMHeartbeat.java:81)
+	at java.lang.Thread.run(Thread.java:810)

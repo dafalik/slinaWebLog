@@ -1,0 +1,55 @@
+2012-11-02 09:00:30,315 DEBUG Convert string 'validateDouble' to class 'java.lang.String'
+2012-11-02 09:00:30,315 DEBUG   Fire begin() for SetNextRule[methodName=addValidatorAction, paramType=org.apache.commons.validator.ValidatorAction]
+2012-11-02 09:00:30,315 DEBUG endElement(,validator,validator)
+2012-11-02 09:00:30,315 DEBUG   match='form-validation/global/validator'
+2012-11-02 09:00:30,315 DEBUG   bodyText=''
+2012-11-02 09:00:30,315 DEBUG   Fire body() for ObjectCreateRule[className=org.apache.commons.validator.ValidatorAction, attributeName=null]
+2012-11-02 09:00:30,315 DEBUG   Fire body() for SetPropertiesRule[]
+2012-11-02 09:00:30,315 DEBUG   Fire body() for SetNextRule[methodName=addValidatorAction, paramType=org.apache.commons.validator.ValidatorAction]
+2012-11-02 09:00:30,315 DEBUG   Popping body text ''
+2012-11-02 09:00:30,315 DEBUG   Fire end() for SetNextRule[methodName=addValidatorAction, paramType=org.apache.commons.validator.ValidatorAction]
+2012-11-02 09:00:30,315 DEBUG [SetNextRule]{form-validation/global/validator} Call org.apache.commons.validator.ValidatorResources.addValidatorAction(ValidatorAction: double
+)
+2012-11-02 09:00:30,315 DEBUG   Unable to read javascript name org/apache/commons/validator/javascript/validateDouble.js
+2012-11-02 09:00:30,315 DEBUG Add ValidatorAction: double,org.apache.struts.validator.FieldChecks
+2012-11-02 09:00:30,315 DEBUG   Fire end() for SetPropertiesRule[]
+2012-11-02 09:00:30,315 DEBUG   Fire end() for ObjectCreateRule[className=org.apache.commons.validator.ValidatorAction, attributeName=null]
+2012-11-02 09:00:30,315 DEBUG [ObjectCreateRule]{form-validation/global/validator} Pop org.apache.commons.validator.ValidatorAction
+2012-11-02 09:00:30,315 DEBUG startElement(,validator,validator)
+2012-11-02 09:00:30,315 DEBUG   Pushing body text ''
+2012-11-02 09:00:30,315 DEBUG   New match='form-validation/global/validator'
+2012-11-02 09:00:30,315 DEBUG   Fire begin() for ObjectCreateRule[className=org.apache.commons.validator.ValidatorAction, attributeName=null]
+2012-11-02 09:00:30,315 DEBUG [ObjectCreateRule]{form-validation/global/validator}New org.apache.commons.validator.ValidatorAction
+2012-11-02 09:00:30,315 DEBUG   Fire begin() for SetPropertiesRule[]
+2012-11-02 09:00:30,315 DEBUG [SetPropertiesRule]{form-validation/global/validator} Setting property 'name' to 'date'
+2012-11-02 09:00:30,315 DEBUG [SetPropertiesRule]{form-validation/global/validator} Setting property 'classname' to 'org.apache.struts.validator.FieldChecks'
+2012-11-02 09:00:30,315 DEBUG [SetPropertiesRule]{form-validation/global/validator} Setting property 'method' to 'validateDate'
+2012-11-02 09:00:30,315 DEBUG [SetPropertiesRule]{form-validation/global/validator} Setting property 'methodParams' to 'java.lang.Object,                        org.apache.commons.validator.ValidatorAction,                        org.apache.commons.validator.Field,                        org.apache.struts.action.ActionMessages,                        org.apache.commons.validator.Validator,                        javax.servlet.http.HttpServletRequest'
+2012-11-02 09:00:30,315 DEBUG [SetPropertiesRule]{form-validation/global/validator} Setting property 'depends' to ''
+2012-11-02 09:00:30,315 DEBUG [SetPropertiesRule]{form-validation/global/validator} Setting property 'msg' to 'errors.date'
+2012-11-02 09:00:30,315 DEBUG [SetPropertiesRule]{form-validation/global/validator} Setting property 'jsFunctionName' to 'DateValidations'
+2012-11-02 09:00:30,315 DEBUG [SetPropertiesRule]{form-validation/global/validator} Set org.apache.commons.validator.ValidatorAction properties
+2012-11-02 09:00:30,315 DEBUG BeanUtils.populate(ValidatorAction: null
+, {classname=org.apache.struts.validator.FieldChecks, jsFunctionName=DateValidations, msg=errors.date, methodParams=java.lang.Object,                        org.apache.commons.validator.ValidatorAction,                        org.apache.commons.validator.Field,                        org.apache.struts.action.ActionMessages,                        org.apache.commons.validator.Validator,                        javax.servlet.http.HttpServletRequest, name=date, depends=, method=validateDate})
+2012-11-02 09:00:30,315 DEBUG Convert string 'org.apache.struts.validator.FieldChecks' to class 'java.lang.String'
+2012-11-02 09:00:30,315 DEBUG Convert string 'DateValidations' to class 'java.lang.String'
+2012-11-02 09:00:30,315 DEBUG Convert string 'errors.date' to class 'java.lang.String'
+2012-11-02 09:00:30,315 DEBUG Convert string 'java.lang.Object,                        org.apache.commons.validator.ValidatorAction,                        org.apache.commons.validator.Field,                        org.apache.struts.action.ActionMessages,                        org.apache.commons.validator.Validator,                        javax.servlet.http.HttpServletRequest' to class 'java.lang.String'
+2012-11-02 09:00:30,315 DEBUG Convert string 'date' to class 'java.lang.String'
+2012-11-02 09:00:30,315 DEBUG Convert string '' to class 'java.lang.String'
+2012-11-02 09:00:30,315 DEBUG Convert string 'validateDate' to class 'java.lang.String'
+2012-11-02 09:00:30,315 DEBUG   Fire begin() for SetNextRule[methodName=addValidatorAction, paramType=org.apache.commons.validator.ValidatorAction]
+2012-11-02 09:00:30,315 DEBUG endElement(,validator,validator)
+2012-11-02 09:00:30,315 DEBUG   match='form-validation/global/validator'
+2012-11-02 09:00:30,315 DEBUG   bodyText=''
+2012-11-02 09:00:30,315 DEBUG   Fire body() for ObjectCreateRule[className=org.apache.commons.validator.ValidatorAction, attributeName=null]
+2012-11-02 09:00:30,315 DEBUG   Fire body() for SetPropertiesRule[]
+2012-11-02 09:00:30,315 DEBUG   Fire body() for SetNextRule[methodName=addValidatorAction, paramType=org.apache.commons.validator.ValidatorAction]
+2012-11-02 09:00:30,315 DEBUG   Popping body text ''
+2012-11-02 09:00:30,315 DEBUG   Fire end() for SetNextRule[methodName=addValidatorAction, paramType=org.apache.commons.validator.ValidatorAction]
+2012-11-02 09:00:30,315 DEBUG [SetNextRule]{form-validation/global/validator} Call org.apache.commons.validator.ValidatorResources.addValidatorAction(ValidatorAction: date
+)
+2012-11-02 09:00:30,315 DEBUG Add ValidatorAction: date,org.apache.struts.validator.FieldChecks
+2012-11-02 09:00:30,315 DEBUG   Fire end() for SetPropertiesRule[]
+2012-11-02 09:00:30,315 DEBUG   Fire end() for ObjectCreateRule[className=org.apache.commons.validator.ValidatorAction, attributeName=null]
+2012-11-02 09:00:30,315 DEBUG [ObjectCreateRule]{form-validation/global/validator} Pop org.apache.commons.validator.ValidatorAction

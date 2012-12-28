@@ -16,7 +16,6 @@
  */
 package slina.mb.menu;
 
-
 import java.util.List;
 
 import slina.mb.io.LogFilePathImpl;

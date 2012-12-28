@@ -1,0 +1,67 @@
+@charset "utf-8";
+body {
+	font: 9pt 'GothamBookRegular', Helvetica, Arial, sans-serif;
+	background-image: url(img/gradBG1.jpg);
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	background-attachment: fixed;
+	background-color: #fff;
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+a {
+ color: #334f65;
+}
+a:hover {
+ color: #000;
+ cursor: hand;
+ text-decoration: none;
+ border-bottom: 1px solid #000000;
+}
+#errorHeaderNo {
+	font-family: 'GothamThinRegular', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: -0.08em;
+	color: #999;
+	font-size: 100pt;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	text-align: left;
+}
+#errorHeaderDescription {
+	font-family: 'GothamBookRegular', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: -0.08em;
+	color: #999;
+	padding-left: 3px;
+	padding-right: 3px;
+	font-size: 20pt;
+	margin-bottom: 50px;
+	text-align: left;
+}
+.oneColLiqCtr #container {
+	width: 400px;  /* this will create a container 80% of the browser width */
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+.oneColLiqCtr #mainContent {
+	margin-top: 100px;
+	padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+}
+#errorContent {
+	padding: 10px;
+	color: #333;
+	
+}
+#errorContent em {
+	font-family: 'GothamBookItalic', Helvetica, Arial, sans-serif;
+}
+#IGfooter {
+	margin-top: 50px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
