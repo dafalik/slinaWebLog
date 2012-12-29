@@ -173,7 +173,6 @@ public class AdvanceWarningImpl implements AdvanceWarning {
 	}
 
 	/* (non-Javadoc)
-	 * @see ig.mips.anil.cron.AdvanceWarning#getFilteredServList()
 	 */
 	@Override
 	public List<LogEvent> getFilteredServList() {

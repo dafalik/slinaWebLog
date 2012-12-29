@@ -18,6 +18,8 @@ package slina.mb.io;
 
 import java.io.Serializable;
 
+import org.springframework.core.io.Resource;
+
 /**
  * @author amaraa1
  *
@@ -30,36 +32,26 @@ public class LogFilePathImpl implements Serializable, LogFilePath {
 	private int parserId;
 	private int parserConfigId;
 	private String sourceLogDirectory;
+	private Resource resource;
 
 	
 	
-	/* (non-Javadoc)
-	 * @see ig.mips.anil.io.LogFilePath#getLogDirectory()
-	 */
 	@Override
 	public String getLogDirectory() {
 		return this.logDirectory;
 	}
 	
-	/* (non-Javadoc)
-	 * @see ig.mips.anil.io.LogFilePath#setLogDirectory(java.lang.String)
-	 */
 	@Override
 	public void setLogDirectory(String logDirectory) {
 		this.logDirectory = logDirectory;
 	}
-	
-	/* (non-Javadoc)
-	 * @see ig.mips.anil.io.LogFilePath#getFileName()
-	 */
+
 	@Override
 	public String getFileName() {
 		return this.fileName;
 	}
 	
-	/* (non-Javadoc)
-	 * @see ig.mips.anil.io.LogFilePath#setFileName(java.lang.String)
-	 */
+
 	@Override
 	public void setFileName(String fileName) {
 		this.fileName = fileName;
@@ -97,6 +89,14 @@ public class LogFilePathImpl implements Serializable, LogFilePath {
 
 	public void setParserConfigId(int parserConfigId) {
 		this.parserConfigId = parserConfigId;
+	}
+
+	public void setResource(Resource resource) {
+		this.resource = resource;
+	}
+
+	public Resource getResource() {
+		return resource;
 	}
 
 

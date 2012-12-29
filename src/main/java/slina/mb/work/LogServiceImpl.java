@@ -26,6 +26,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
+import org.springframework.core.io.Resource;
 
 import slina.mb.cron.AdvanceWarning;
 import slina.mb.domain.LogEvent;
@@ -72,14 +73,15 @@ public class LogServiceImpl {
 		
 		for(LogFilePath logPath: logFilePathList) {
 			
-			String filepath = logPath.getfullFilePath();
+			//String filepath = logPath.getfullFilePath();
+			Resource resource = logPath.getResource();
 			int paserId = logPath.getParserId();
 			int paserConfigId = logPath.getParserConfigId();
-			LOGGER.info("Process file for display : "+filepath);
+			LOGGER.info("Process file for display : "+resource.getFilename());
 			
 			Log4jParser logParser = logParserMap.get(paserId);
 			
-			List<String> filelist = this.logFileReader.readFile(filepath);					
+			List<String> filelist = this.logFileReader.readFile(resource);					
 			List<LogEvent> logList = logParser.createLogEvents(paserConfigId,filelist);
 			
 			eventlogList.addAll(logList);

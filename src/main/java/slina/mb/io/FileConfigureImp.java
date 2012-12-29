@@ -33,9 +33,7 @@ public class FileConfigureImp implements FileConfigure {
 	private String name;
 	
 
-	/* (non-Javadoc)
-	 * @see ig.mips.anil.io.FileConfigure#getFilePath()
-	 */
+
 	@Override
 	public List<String> getFilePath() {
 		return this.filePath;
@@ -46,10 +44,6 @@ public class FileConfigureImp implements FileConfigure {
 	}
 
 
-
-	/* (non-Javadoc)
-	 * @see ig.mips.anil.io.FileConfigure#getId()
-	 */
 	@Override
 	public int getId() {
 		return this.id;
@@ -60,9 +54,6 @@ public class FileConfigureImp implements FileConfigure {
 	}
 
 
-	/* (non-Javadoc)
-	 * @see ig.mips.anil.io.FileConfigure#getName()
-	 */
 	@Override
 	public String getName() {
 		return this.name;

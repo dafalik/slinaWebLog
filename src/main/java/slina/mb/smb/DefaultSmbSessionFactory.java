@@ -31,33 +31,24 @@ public class DefaultSmbSessionFactory implements SessionFactory  {
 
 	private volatile String password;
 
-	/* (non-Javadoc)
-	 * @see ig.mips.anil.smb.SessionFactory#setDomain(java.lang.String)
-	 */
+
 	@Override
 	public void setDomain(String domain) {	
 		this.domain = domain;
 	}
 
-	/* (non-Javadoc)
-	 * @see ig.mips.anil.smb.SessionFactory#setUser(java.lang.String)
-	 */
+
 	@Override
 	public void setUser(String user) {
 		this.user = user;
 	}
 
-	/* (non-Javadoc)
-	 * @see ig.mips.anil.smb.SessionFactory#setPassword(java.lang.String)
-	 */
+
 	@Override
 	public void setPassword(String password) {
 		this.password = password;
 	}
 
-	/* (non-Javadoc)
-	 * @see ig.mips.anil.smb.SessionFactory#getSession()
-	 */
 	@Override
 	public Session getSession() {
 		Assert.notNull(this.domain, "domain must not be null");

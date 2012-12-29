@@ -32,18 +32,13 @@ import org.springframework.core.io.Resource;
 
 /**
  * @author anil
- * 	    File file = new File("/home/anil/Development2/workspace-logReader/logparser/src/main/resources/ig/mips/mailBox.log");
-
- *
  */
 public class LogFileReaderImpl implements LogFileReader {
 	
 	private static final Logger LOGGER = Logger.getLogger(LogFileReaderImpl.class);
 	private boolean checkClassPath = false;
 	
-	/* (non-Javadoc)
-	 * @see ig.mips.utils.LogFileReader#readFile(java.lang.String)
-	 */
+
 	@Override
 	public List<String> readFile(String fileName)  {
 
@@ -85,7 +80,40 @@ public class LogFileReaderImpl implements LogFileReader {
 		}
 	    
 	}	
+
 	
+	
+	
+
+	public List<String> readFile(Resource resource)  {
+
+		List<String> lines = new ArrayList<String>();
+		
+   	 try {
+		
+			    long before = System.currentTimeMillis();
+		
+			    File file = resource.getFile();	    	    	
+			   
+			    BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file)));			        			        
+			    String line = reader.readLine(); 
+			        
+			    while(line != null) {
+			        lines.add(line);
+			        line = reader.readLine(); 
+			    }
+		
+			    long after = System.currentTimeMillis();
+			    reader.close();
+			    LOGGER.info("conv. run took " + (after - before) + " ms, size = "+lines.size());
+			    return lines;
+	    
+		} catch (IOException e) {
+			LOGGER.error(e);
+			return lines;
+		}
+	    
+	}	
 	
 	public List<String> readFile(File file) {
 		

@@ -60,9 +60,6 @@ public class FilteringLog4jParserImpl implements Log4jParser  {
 	
 	
 
-	/* (non-Javadoc)
-	 * @see ig.mips.anil.parsing.Log4jParser#createLogEvents(java.util.List)
-	 */
 	@Override
 	public List<LogEvent> createLogEvents(Integer configId, List<String> filelist) {
 		

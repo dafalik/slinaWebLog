@@ -19,6 +19,7 @@
 
 			    <bean id="prod1SysoutLog" class="slina.mb.io.LogFilePathImpl">
 						<property name="logDirectory" value="/logfiles/app/prod1" />
+						<property name="resource" value="classpath:logfiles/app/prod1/SystemOut.log" />
 						<property name="fileName" value="SystemOut.log" />
 						<property name="parserConfigId" value="0" />
 						<property name="parserId" value="0" />
@@ -27,6 +28,7 @@
 
 			    <bean id="prod1App1Log" class="slina.mb.io.LogFilePathImpl">
 						<property name="logDirectory" value="/logfiles/app/prod1" />
+						<property name="resource" value="classpath:logfiles/app/prod1/app1.log" />
 						<property name="fileName" value="app1.log" />
 						<property name="parserConfigId" value="1" />
 						<property name="parserId" value="0" />
@@ -35,6 +37,7 @@
  
 			     <bean id="prod1App8Log" class="slina.mb.io.LogFilePathImpl">
 						<property name="logDirectory" value="/logfiles/app/prod1" />
+						<property name="resource" value="classpath:logfiles/app/prod1/app8.log" />
 						<property name="fileName" value="app8.log" />
 						<property name="parserConfigId" value="8" />
 						<property name="parserId" value="0" />
@@ -43,6 +46,7 @@
  
  			     <bean id="prod1App9Log" class="slina.mb.io.LogFilePathImpl">
 						<property name="logDirectory" value="/logfiles/app/prod1" />
+						<property name="resource" value="classpath:logfiles/app/prod1/app9.log" />
 						<property name="fileName" value="app9.log" />
 						<property name="parserConfigId" value="2" />
 						<property name="parserId" value="0" />
@@ -52,6 +56,7 @@
  
  				<bean id="prod1Application1Log" class="slina.mb.io.LogFilePathImpl">
      					<property name="logDirectory" value="/logfiles/app/prod1" />
+     					<property name="resource" value="classpath:logfiles/app/prod1/application1.log" />
      					<property name="fileName" value="application1.log" />
      					<property name="parserConfigId" value="7" />
      					<property name="parserId" value="1" />
@@ -60,6 +65,7 @@
 
  				<bean id="prod1Application2Log" class="slina.mb.io.LogFilePathImpl">
      					<property name="logDirectory" value="/logfiles/app/prod1" />
+     					<property name="resource" value="classpath:logfiles/app/prod1/application2.log" />
      					<property name="fileName" value="application2.log" />
      					<property name="parserConfigId" value="7" />
      					<property name="parserId" value="1" />
@@ -72,6 +78,7 @@
 
 			    <bean id="prod2SysoutLog" class="slina.mb.io.LogFilePathImpl">
 						<property name="logDirectory" value="/logfiles/app/prod2" />
+						<property name="resource" value="classpath:logfiles/app/prod2/SystemOut.log" />
 						<property name="fileName" value="SystemOut.log" />
 						<property name="parserConfigId" value="0" />
 						<property name="parserId" value="0" />
@@ -80,6 +87,7 @@
 
 			    <bean id="prod2App1Log" class="slina.mb.io.LogFilePathImpl">
 						<property name="logDirectory" value="/logfiles/app/prod2" />
+						<property name="resource" value="classpath:logfiles/app/prod2/app1.log" />
 						<property name="fileName" value="app1.log" />
 						<property name="parserConfigId" value="1" />
 						<property name="parserId" value="0" />
@@ -88,6 +96,7 @@
  
 			     <bean id="prod2App8Log" class="slina.mb.io.LogFilePathImpl">
 						<property name="logDirectory" value="/logfiles/app/prod2" />
+						<property name="resource" value="classpath:logfiles/app/prod2/app8.log" />
 						<property name="fileName" value="app8.log" />
 						<property name="parserConfigId" value="8" />
 						<property name="parserId" value="0" />
@@ -96,6 +105,7 @@
  
  			     <bean id="prod2App9Log" class="slina.mb.io.LogFilePathImpl">
 						<property name="logDirectory" value="/logfiles/app/prod2" />
+						<property name="resource" value="classpath:logfiles/app/prod2/app9.log" />
 						<property name="fileName" value="app9.log" />
 						<property name="parserConfigId" value="2" />
 						<property name="parserId" value="0" />
@@ -106,6 +116,7 @@
  				<bean id="prod2Application1Log" class="slina.mb.io.LogFilePathImpl">
      					<property name="logDirectory" value="/logfiles/app/prod2" />
      					<property name="fileName" value="application1.log" />
+     					<property name="resource" value="classpath:logfiles/app/prod2/application1.log" />
      					<property name="parserConfigId" value="7" />
      					<property name="parserId" value="1" />
      					<property name="sourceLogDirectory" value="/apps/logs/web/igh" />
@@ -113,6 +124,7 @@
 
  				<bean id="prod2Application2Log" class="slina.mb.io.LogFilePathImpl">
      					<property name="logDirectory" value="/logfiles/app/prod2" />
+     					<property name="resource" value="classpath:logfiles/app/prod2/application2.log" />
      					<property name="fileName" value="application2.log" />
      					<property name="parserConfigId" value="7" />
      					<property name="parserId" value="1" />

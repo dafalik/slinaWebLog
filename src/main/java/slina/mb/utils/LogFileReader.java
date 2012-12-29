@@ -20,10 +20,14 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
+import org.springframework.core.io.Resource;
+
 public interface LogFileReader {
 
 	public abstract List<String> readFile(String fileName) throws IOException;
 	
 	public List<String> readFile(File file);
+	
+	public List<String> readFile(Resource resource);
 
 }

@@ -60,176 +60,119 @@ public class LogEventImpl implements LogEvent {
 
 
 
-	/* (non-Javadoc)
-	 * @see ig.mips.domain.LogEvent#getYear()
-	 */
 	@Override
 	public int getYear() {
 		return year;
 	}
 	
-	/* (non-Javadoc)
-	 * @see ig.mips.domain.LogEvent#setYear(java.lang.String)
-	 */
+
 	@Override
 	public void setYear(String year) {
 		this.year = Integer.parseInt(year);
 	}
 	
-	/* (non-Javadoc)
-	 * @see ig.mips.domain.LogEvent#getMonth()
-	 */
+
 	@Override
 	public int getMonth() {
 		return month;
 	}
 	
-	/* (non-Javadoc)
-	 * @see ig.mips.domain.LogEvent#setMonth(java.lang.String)
-	 */
+
 	@Override
 	public void setMonth(String month) {
 		this.month = Integer.parseInt(month)-1;
 	}
-	/* (non-Javadoc)
-	 * @see ig.mips.domain.LogEvent#getDay()
-	 */
+
 	@Override
 	public int getDay() {
 		return day;
 	}
 	
-	/* (non-Javadoc)
-	 * @see ig.mips.domain.LogEvent#setDay(java.lang.String)
-	 */
+
 	@Override
 	public void setDay(String day) {
 		this.day = Integer.parseInt(day);
 	}
 	
-	/* (non-Javadoc)
-	 * @see ig.mips.domain.LogEvent#getHour()
-	 */
+
 	@Override
 	public int getHour() {
 		return hour;
 	}
-	/* (non-Javadoc)
-	 * @see ig.mips.domain.LogEvent#setHour(java.lang.String)
-	 */
+
 	@Override
 	public void setHour(String hour) {
 		this.hour = Integer.parseInt(hour);
 	}
 	
-	/* (non-Javadoc)
-	 * @see ig.mips.domain.LogEvent#getMinute()
-	 */
+
 	@Override
 	public int getMinute() {
 		return minute;
 	}
 	
-	/* (non-Javadoc)
-	 * @see ig.mips.domain.LogEvent#setMinute(java.lang.String)
-	 */
+
 	@Override
 	public void setMinute(String minute) {
 		this.minute = Integer.parseInt(minute);
 	}
 	
-	/* (non-Javadoc)
-	 * @see ig.mips.domain.LogEvent#getSeconds()
-	 */
 	@Override
 	public int getSeconds() {
 		return seconds;
 	}
 	
-	/* (non-Javadoc)
-	 * @see ig.mips.domain.LogEvent#setSeconds(java.lang.String)
-	 */
 	@Override
 	public void setSeconds(String seconds) {
 		this.seconds = Integer.parseInt(seconds);
 	}
 	
-	/* (non-Javadoc)
-	 * @see ig.mips.domain.LogEvent#getMiliseconds()
-	 */
 	@Override
 	public int getMiliseconds() {
 		return miliseconds;
 	}
 	
-	/* (non-Javadoc)
-	 * @see ig.mips.domain.LogEvent#setMiliseconds(java.lang.String)
-	 */
 	@Override
 	public void setMiliseconds(String miliseconds) {
 		this.miliseconds = Integer.parseInt(miliseconds);
 	}
 	
-	/* (non-Javadoc)
-	 * @see ig.mips.domain.LogEvent#getLogLevel()
-	 */
 	@Override
 	public Loglevel getLogLevel() {
 		return this.logLevel;
 	}
 	
-	/* (non-Javadoc)
-	 * @see ig.mips.domain.LogEvent#setLogLevel(java.lang.String)
-	 */
 	@Override
 	public void setLogLevel(Loglevel logLevel) {
 
 		this.logLevel = logLevel;
 	}
 	
-	/* (non-Javadoc)
-	 * @see ig.mips.domain.LogEvent#getLogClass()
-	 */
 	@Override
 	public String getLogClass() {
 		return logClass;
 	}
 	
-	/* (non-Javadoc)
-	 * @see ig.mips.domain.LogEvent#setLogClass(java.lang.String)
-	 */
 	@Override
 	public void setLogClass(String logClass) {
 		this.logClass = logClass;
 	}
 	
-	/* (non-Javadoc)
-	 * @see ig.mips.domain.LogEvent#getLogMessage()
-	 */
 	@Override
 	public String getLogMessage() {
 		return logMessage;
 	}
 	
-	/* (non-Javadoc)
-	 * @see ig.mips.domain.LogEvent#setLogMessage(java.lang.String)
-	 */
 	@Override
 	public void setLogMessage(String logMessage) {
 		this.logMessage = logMessage;
 	}
 	
-	/* (non-Javadoc)
-	 * @see ig.mips.domain.LogEvent#getLogDetails()
-	 */
 	@Override
 	public List<String> getLogDetails() {
 		return this.logDetails;
 	}
 	
-	/* (non-Javadoc)
-	 * @see ig.mips.domain.LogEvent#addLogDetails(java.lang.String)
-	 */
 	@Override
 	public void addLogDetails(String logDetails) {
 		this.logDetails.add(logDetails);

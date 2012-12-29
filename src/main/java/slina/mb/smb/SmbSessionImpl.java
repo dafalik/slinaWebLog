@@ -51,9 +51,6 @@ public class SmbSessionImpl implements Session  {
 	}
 
 
-	/* (non-Javadoc)
-	 * @see ig.mips.anil.smb.Session#remove(java.lang.String)
-	 */
 	@Override
 	public boolean remove(String path) throws IOException {
 		try {
@@ -73,9 +70,6 @@ public class SmbSessionImpl implements Session  {
 		return true;
 	}
 
-	/* (non-Javadoc)
-	 * @see ig.mips.anil.smb.Session#list(java.lang.String)
-	 */
 	@Override
 	public SmbFile[] list(String path) throws IOException {
 		try {
@@ -130,9 +124,6 @@ public class SmbSessionImpl implements Session  {
 	
 	
 	
-	/* (non-Javadoc)
-	 * @see ig.mips.anil.smb.Session#read(java.lang.String, java.io.OutputStream)
-	 */
 	@Override
 	public void read(String source, OutputStream os) throws IOException {
 		try {
@@ -162,9 +153,6 @@ public class SmbSessionImpl implements Session  {
 		}
 	}
 
-	/* (non-Javadoc)
-	 * @see ig.mips.anil.smb.Session#write(java.io.InputStream, java.lang.String)
-	 */
 	@Override
 	public void write(InputStream inputStream, String destination) throws IOException {
 		try {
@@ -184,9 +172,7 @@ public class SmbSessionImpl implements Session  {
 		}	
 	}
 
-	/* (non-Javadoc)
-	 * @see ig.mips.anil.smb.Session#rename(java.lang.String, java.lang.String)
-	 */
+
 	@Override
 	public void rename(String pathFrom, String pathTo) throws IOException {
 		try {
@@ -206,9 +192,7 @@ public class SmbSessionImpl implements Session  {
 		}	
 	}
 
-	/* (non-Javadoc)
-	 * @see ig.mips.anil.smb.Session#mkdir(java.lang.String)
-	 */
+
 	@Override
 	public void mkdir(String directory) throws IOException {
 		try {
@@ -227,17 +211,13 @@ public class SmbSessionImpl implements Session  {
 		}	
 	}
 
-	/* (non-Javadoc)
-	 * @see ig.mips.anil.smb.Session#close()
-	 */
+
 	@Override
 	public void close() {
 		isOpen = false;
 	}
 
-	/* (non-Javadoc)
-	 * @see ig.mips.anil.smb.Session#isOpen()
-	 */
+
 	@Override
 	public boolean isOpen() {
 		return isOpen;

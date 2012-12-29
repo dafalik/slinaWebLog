@@ -27,13 +27,9 @@ public class ServerInfoImpl implements ServerInfo {
 	private String password;
 	private int portNumber = 22;
 	private String domain;
+	
+	
 
-	
-	
-	
-	/* (non-Javadoc)
-	 * @see ig.mips.anil.cron.ServerInfo#getServerName()
-	 */
 	@Override
 	public String getServerName() {
 		return this.serverName;
@@ -43,9 +39,7 @@ public class ServerInfoImpl implements ServerInfo {
 		this.serverName = serverName;
 	}
 	
-	/* (non-Javadoc)
-	 * @see ig.mips.anil.cron.ServerInfo#getUserId()
-	 */
+
 	@Override
 	public String getUserId() {
 		return this.userId;
@@ -55,9 +49,7 @@ public class ServerInfoImpl implements ServerInfo {
 		this.userId = userId;
 	}
 	
-	/* (non-Javadoc)
-	 * @see ig.mips.anil.cron.ServerInfo#getPassword()
-	 */
+
 	@Override
 	public String getPassword() {
 		return this.password;
@@ -66,9 +58,7 @@ public class ServerInfoImpl implements ServerInfo {
 		this.password = password;
 	}
 	
-	/* (non-Javadoc)
-	 * @see ig.mips.anil.cron.ServerInfo#getPortNumber()
-	 */
+
 	@Override
 	public int getPortNumber() {
 		return this.portNumber;
@@ -78,9 +68,7 @@ public class ServerInfoImpl implements ServerInfo {
 		this.portNumber = portNumber;
 	}
 	
-	/* (non-Javadoc)
-	 * @see ig.mips.anil.cron.ServerInfo#getDomain()
-	 */
+
 	@Override
 	public String getDomain() {
 		return this.domain;

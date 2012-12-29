@@ -38,20 +38,20 @@ public class RegulerExpressionTests {
 		        "[   2012-08-03 07:42:53,388  ]   INFO     AbstractLoggingInterceptor -- Inbound Message",
 		        "[   2012-08-03 07:42:53,388  ]   INFO     AbstractLoggingInterceptor   -- Inbound Message",
 		        "[   2012-08-03 07:42:53,388  ]   INFO     AbstractLoggingInterceptor   --    Inbound Message",
-		        "ig.mailbox.controller.MailboxSelector@35bf35bf[lang=fr,igEntityId=,clientId=,consultantNumber=11"
+		        "mailbox.controller.MailboxSelector@35bf35bf[lang=fr,igEntityId=,clientId=,Number=11"
 		    };
 	 
 	 
 	 String[] samples1 = {
-		        "2012-08-06 04:59:33,129 WARN  corp.soa.serviceinterface.ConnectionTester The following exception occured while testing connection: ssaiap3.gwl.bz/10.90.19.52:26054, 1344246273129",
-//		        "2012-08-03 11:37:33,828 ERROR ig.bcs.infrastructure.imp.ConsultantAccessVoter Exception while authorizing page access.",
+		        "2012-08-06 04:59:33,129 WARN  corp.soa.serviceinterface.ConnectionTester The following exception occured while testing connection: xyx.com/192.168.1.1:34567, 1344246273129",
+//		        "2012-08-03 11:37:33,828 ERROR infrastructure.imp.AccessVoter Exception while authorizing page access.",
 //		        "2012-07-25 23:17:39,064 INFO  org.springframework.web.context.support.XmlWebApplicationContext Closing org.springframework.web.context.support.XmlWebApplicationContext@130b130b: display name [WebApplicationContext for namespace 'consultantPracticeIWAWar-servlet']; startup date [Sun Jul 22 10:57:08 CDT 2012]; root of context hierarchy",
-//		        "2012-08-06 14:05:29,587 DEBUG ig.fs.eLearningSilentLogin.action.SilentLoginAction - ##-----------------------------------------------------------##",
-//		        "2012-07-30 14:10:36,535 INFO  ig.fs.highRiskMonitoring.service.MonitoredClientService                User FAILIJ1 saving data for client         3151346 7925506 CANADA INC",
-//		        "2012-08-03 10:01:37,502 ERROR ig.fs.MortgageInq.util.AuthorizationUtil                               Authentication Exception : [LDAP: error code 32 - 0000208D: NameErr: DSID-031001D2, problem 2001 (NO_OBJECT), data 0, best match of:'OU=Members,O=Investors Group'",
-//		        "2012-08-02 07:07:21,425 WARN  org.apache.cxf.phase.PhaseInterceptorChain Interceptor for {urn:pi:services:integration:11.0.0.3}PortfolioInquiryServiceInterfaceService#{urn:pi:services:integration:11.0.0.3}GetPortfolioSummary has thrown exception, unwinding now",
+//		        "2012-08-06 14:05:29,587 DEBUG LearningSilentLogin.action.LoginAction - ##-----------------------------------------------------------##",
+//		        "2012-07-30 14:10:36,535 INFO  highRiskMonitoring.service.MonitoredClientService                User FAILIJ1 saving data for client",
+//		        "2012-08-03 10:01:37,502 ERROR mortgageInq.util.AuthorizationUtil                               Authentication Exception : [LDAP: error code 32 - 0000208D: NameE'",
+//		        "2012-08-02 07:07:21,425 WARN  org.apache.cxf.phase.PhaseInterceptorChain Interceptor for {urn:services:integration:11.0.0.3}PortfolioInquiryServiceInterfaceService#{urn:pi:services:integration:11.0.0.3}GetPortfolioSummary has thrown exception, unwinding now",
 //			 	  "2012-08-07 06:41:00,750 INFO  getFamilyGroup(\"2501000\")",
-//			 	  "2012-08-07 00:51:48,326 DEBUG com.ig.pfp.services.dao.dbimpl.BaseDAO PathwayContact =====> com.ig.pfp.services.domain.LDAPRoleMapping@30b630b6["
+//			 	  "2012-08-07 00:51:48,326 DEBUG BaseDAO Contact =====> domain.LDAPRoleMapping@30b630b6["
 		    };
 
 	 String[] samples2 = {
@@ -143,7 +143,7 @@ public class RegulerExpressionTests {
 0. 7    --->   129
 0. 8    --->   WARN
 0. 9    --->    corp.soa.serviceinterface.ConnectionTester
-0. 10    --->   The following exception occured while testing connection: ssaiap3.gwl.bz/10.90.19.52:26054, 1344246273129
+0. 10    --->   The following exception occured while testing connection: xyx.bn.com/192.168.1.1:56789, 1344246273129
 
 		 */
 		

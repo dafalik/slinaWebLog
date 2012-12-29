@@ -33,7 +33,7 @@
 [11/2/12 8:26:02:885 CDT] 00000033 SpnegoHandler W com.abxb.ws.security.spnego.SpnegoHandler handleRequest CWSPN0021E: No delegated credentials were found for user: dvv@slina.ca.
 [11/2/12 8:27:07:469 CDT] 00000081 ClientSideUse I   UserCredentialsClientInterceptor handleMessage invoked
 [11/2/12 8:27:11:382 CDT] 00000081 ClientSideUse I   UserCredentialsClientInterceptor handleMessage invoked
-[11/2/12 8:27:12:347 CDT] 00000071 SpnegoHandler W com.abxb.ws.security.spnego.SpnegoHandler handleRequest CWSPN0021E: No delegated credentials were found for user: dfdf@IG.BZ.
+[11/2/12 8:27:12:347 CDT] 00000071 SpnegoHandler W com.abxb.ws.security.spnego.SpnegoHandler handleRequest CWSPN0021E: No delegated credentials were found for user: dfdf@IH.BZ.
 [11/2/12 8:27:13:859 CDT] 00000071 SystemOut     O message : null
 [11/2/12 8:57:58:219 CDT] 00000007 TimeoutManage I   WTRN0006W: Transaction 0000013AC168228600000001000211BE310905D7BCEABEA927570637B5AE9825BCD1758D0000013AC168228600000001000211BE310905D7BCEABEA927570637B5AE9825BCD1758D00000001 has timed out after 120 seconds.
 [11/2/12 8:57:58:221 CDT] 00000007 TimeoutManage I   WTRN0124I: When the timeout occurred the thread with which the transaction is, or was most recently, associated was Thread[WebContainer : 33,5,main]. The stack trace of this thread when the timeout occurred was: 
@@ -65,7 +65,7 @@
 	com.abxb.io.async.ResultHandler.runEventProcessingLoop(ResultHandler.java:775)
 	com.abxb.io.async.ResultHandler$2.run(ResultHandler.java:905)
 	com.abxb.ws.util.ThreadPool$Worker.run(ThreadPool.java:1604)
-[11/2/12 9:36:56:414 CDT] 0000002e SpnegoHandler W com.abxb.ws.security.spnego.SpnegoHandler handleRequest CWSPN0021E: No delegated credentials were found for user: BOTTRJ1@IG.BZ.
+[11/2/12 9:36:56:414 CDT] 0000002e SpnegoHandler W com.abxb.ws.security.spnego.SpnegoHandler handleRequest CWSPN0021E: No delegated credentials were found for user: BOTBYU@IH.BZ.
 [11/2/12 9:36:56:817 CDT] 00000064 ClientSideUse I   UserCredentialsClientInterceptor handleMessage invoked
 [11/2/12 9:36:57:739 CDT] 00000065 SpnegoHandler W com.abxb.ws.security.spnego.SpnegoHandler handleRequest CWSPN0021E: No delegated credentials were found for user: FIRTHH1@slina.ca.
 [11/2/12 9:36:57:826 CDT] 0000002e servlet       E com.abxb.ws.webcontainer.servlet.ServletWrapper service SRVE0068E: Uncaught exception created in one of the service methods of the servlet SilentLogin in application elearningSilentLogin-1_0_1_war. Exception created : javax.servlet.ServletException: java.lang.NullPointerException

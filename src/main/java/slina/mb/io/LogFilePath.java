@@ -16,6 +16,8 @@
  */
 package slina.mb.io;
 
+import org.springframework.core.io.Resource;
+
 public interface LogFilePath {
 
 	public abstract String getLogDirectory();
@@ -33,5 +35,7 @@ public interface LogFilePath {
 	public String getfullFilePath();
 	
 	public String getSourceLogDirectory();
+	
+	public Resource getResource();
 	
 }
