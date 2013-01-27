@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+        http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+	version="1.0">
+
+	<persistence-unit name="persistenceUnit" transaction-type="RESOURCE_LOCAL">
+	
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>slina.mb.domain.db.DbLogFileImpl</class>
+		<class>slina.mb.domain.db.DbLogEventImpl</class>
+		<class>slina.mb.domain.db.DbLogDetailsImpl</class>
+
+		<!-- 
+			Only specific settings for persistence unit (orm) should be placed here.
+			Do not attempt to put here any dataSource related things like url, login, password, pool settings etc. because 
+			it may not work - for example c3p0 will not work when url, login and pass will be placed here.
+		-->
+		<properties>
+		 <property name="javax.persistence.target-database" value="PostgreSQL" />
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+<!-- 			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/slinadb" />
+			<property name="javax.persistence.jdbc.user" value="anil" />
+			<property name="javax.persistence.jdbc.password" value="" /> -->
+			<property name="hibernate.show_sql" value="false" />
+		</properties>
+	</persistence-unit>
+</persistence>
+
+
+

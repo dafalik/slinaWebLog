@@ -38,4 +38,6 @@ public interface LogFilePath {
 	
 	public Resource getResource();
 	
+	public Long getFileId();
+	
 }

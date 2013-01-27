@@ -74,7 +74,9 @@ public enum Loglevel {
 	            return TRACE;
 	        }
 	        
-	        throw new IllegalArgumentException("No Enum specified for this string "+s);
+	        return UNDEFINED;
+	        
+	       // throw new IllegalArgumentException("No Enum specified for this string "+s);
 	    }
 
 

@@ -78,7 +78,8 @@ public class LogListingController {
     @RequestMapping(value = "/menuTree", method = RequestMethod.GET)
     public  @ResponseBody List<Node> getJstree() {
     	logger.debug("Received request to jstree page");
-    	return this.logService.getProdNodeList();
+    	List<Node> nodeList = this.logService.getProdNodeList();
+    	return nodeList;
 	}
     
     
@@ -102,7 +103,8 @@ public class LogListingController {
 		   
 		try {
 			   List<LogEvent> eventList = this.logService.processLog(uniqueId);
-			   return this.createTableInfoFromLogEventList(eventList, false);
+			   TableInfo tableInfo = this.createTableInfoFromLogEventList(eventList, false);
+			   return tableInfo;
 			   
 			   
 		} catch (IOException e) {

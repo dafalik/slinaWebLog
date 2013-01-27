@@ -24,6 +24,7 @@
 						<property name="parserConfigId" value="0" />
 						<property name="parserId" value="0" />
 						<property name="sourceLogDirectory" value="/web/logs/apps/WebSphere/server1" />
+						<property name="fileId" value="1000" />
 				</bean>	
 
 			    <bean id="prod1App1Log" class="slina.mb.io.LogFilePathImpl">
@@ -33,6 +34,7 @@
 						<property name="parserConfigId" value="1" />
 						<property name="parserId" value="0" />
 						<property name="sourceLogDirectory" value="/web/logs/apps/abc" />
+						<property name="fileId" value="1001" />
 				</bean> 
  
 			     <bean id="prod1App8Log" class="slina.mb.io.LogFilePathImpl">
@@ -42,15 +44,17 @@
 						<property name="parserConfigId" value="8" />
 						<property name="parserId" value="0" />
 						<property name="sourceLogDirectory" value="/web/logs/apps/cde" />
+						<property name="fileId" value="1002" />
 				</bean> 
  
  			     <bean id="prod1App9Log" class="slina.mb.io.LogFilePathImpl">
 						<property name="logDirectory" value="/logfiles/app/prod1" />
 						<property name="resource" value="classpath:logfiles/app/prod1/app9.log" />
 						<property name="fileName" value="app9.log" />
-						<property name="parserConfigId" value="2" />
+						<property name="parserConfigId" value="9" />
 						<property name="parserId" value="0" />
 						<property name="sourceLogDirectory" value="/apps/logs/web/efg" />
+						<property name="fileId" value="1003" />
 				</bean> 
  
  
@@ -61,6 +65,7 @@
      					<property name="parserConfigId" value="7" />
      					<property name="parserId" value="1" />
      					<property name="sourceLogDirectory" value="/apps/logs/web/igh" />
+     					<property name="fileId" value="1004" />
    				</bean>
 
  				<bean id="prod1Application2Log" class="slina.mb.io.LogFilePathImpl">
@@ -70,6 +75,7 @@
      					<property name="parserConfigId" value="7" />
      					<property name="parserId" value="1" />
      					<property name="sourceLogDirectory" value="/apps/logs/web/jkl" />
+     					<property name="fileId" value="1005" />
    				</bean> 
  
    	    
@@ -83,6 +89,7 @@
 						<property name="parserConfigId" value="0" />
 						<property name="parserId" value="0" />
 						<property name="sourceLogDirectory" value="/web/logs/apps/WebSphere/server1" />
+						<property name="fileId" value="1006" />
 				</bean>	
 
 			    <bean id="prod2App1Log" class="slina.mb.io.LogFilePathImpl">
@@ -92,6 +99,7 @@
 						<property name="parserConfigId" value="1" />
 						<property name="parserId" value="0" />
 						<property name="sourceLogDirectory" value="/web/logs/apps/abc" />
+						<property name="fileId" value="1007" />
 				</bean> 
  
 			     <bean id="prod2App8Log" class="slina.mb.io.LogFilePathImpl">
@@ -101,15 +109,17 @@
 						<property name="parserConfigId" value="8" />
 						<property name="parserId" value="0" />
 						<property name="sourceLogDirectory" value="/web/logs/apps/cde" />
+						<property name="fileId" value="1008" />
 				</bean> 
  
  			     <bean id="prod2App9Log" class="slina.mb.io.LogFilePathImpl">
 						<property name="logDirectory" value="/logfiles/app/prod2" />
 						<property name="resource" value="classpath:logfiles/app/prod2/app9.log" />
 						<property name="fileName" value="app9.log" />
-						<property name="parserConfigId" value="2" />
+						<property name="parserConfigId" value="9" />
 						<property name="parserId" value="0" />
 						<property name="sourceLogDirectory" value="/apps/logs/web/efg" />
+						<property name="fileId" value="1009" />
 				</bean> 
  
  
@@ -120,6 +130,7 @@
      					<property name="parserConfigId" value="7" />
      					<property name="parserId" value="1" />
      					<property name="sourceLogDirectory" value="/apps/logs/web/igh" />
+     					<property name="fileId" value="1010" />
    				</bean>
 
  				<bean id="prod2Application2Log" class="slina.mb.io.LogFilePathImpl">
@@ -129,6 +140,7 @@
      					<property name="parserConfigId" value="7" />
      					<property name="parserId" value="1" />
      					<property name="sourceLogDirectory" value="/apps/logs/web/jkl" />
+     					<property name="fileId" value="1011" />
    				</bean> 
 	    
    	    

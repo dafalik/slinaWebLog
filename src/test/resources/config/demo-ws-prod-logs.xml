@@ -24,6 +24,7 @@
 						<property name="parserConfigId" value="0" />
 						<property name="parserId" value="0" />
 						<property name="sourceLogDirectory" value="/web/logs/wss/WebSphere/server1" />
+						<property name="fileId" value="1100" />
 				</bean>	
 
 			    <bean id="prod1WSApp2Log" class="slina.mb.io.LogFilePathImpl">
@@ -33,6 +34,7 @@
 						<property name="parserConfigId" value="2" />
 						<property name="parserId" value="0" />
 						<property name="sourceLogDirectory" value="/web/logs/wss/abc" />
+						<property name="fileId" value="1101" />
 				</bean> 
  
 			     <bean id="prod1WSApp4Log" class="slina.mb.io.LogFilePathImpl">
@@ -42,6 +44,7 @@
 						<property name="parserConfigId" value="4" />
 						<property name="parserId" value="0" />
 						<property name="sourceLogDirectory" value="/web/logs/wss/cde" />
+						<property name="fileId" value="1102" />
 				</bean> 
  
  			     <bean id="prod1WSApp7Log" class="slina.mb.io.LogFilePathImpl">
@@ -51,6 +54,7 @@
 						<property name="parserConfigId" value="7" />
 						<property name="parserId" value="0" />
 						<property name="sourceLogDirectory" value="/wss/logs/web/efg" />
+						<property name="fileId" value="1103" />
 				</bean> 
  
  
@@ -67,6 +71,7 @@
 						<property name="parserConfigId" value="0" />
 						<property name="parserId" value="0" />
 						<property name="sourceLogDirectory" value="/web/logs/wss/WebSphere/server1" />
+						<property name="fileId" value="1104" />
 				</bean>	
 
 			    <bean id="prod2WSApp2Log" class="slina.mb.io.LogFilePathImpl">
@@ -76,6 +81,7 @@
 						<property name="parserConfigId" value="2" />
 						<property name="parserId" value="0" />
 						<property name="sourceLogDirectory" value="/web/logs/wss/abc" />
+						<property name="fileId" value="1105" />
 				</bean> 
  
 			     <bean id="prod2WSApp4Log" class="slina.mb.io.LogFilePathImpl">
@@ -85,6 +91,7 @@
 						<property name="parserConfigId" value="4" />
 						<property name="parserId" value="0" />
 						<property name="sourceLogDirectory" value="/web/logs/wss/cde" />
+						<property name="fileId" value="1106" />
 				</bean> 
  
  			     <bean id="prod2WSApp7Log" class="slina.mb.io.LogFilePathImpl">
@@ -94,6 +101,7 @@
 						<property name="parserConfigId" value="7" />
 						<property name="parserId" value="0" />
 						<property name="sourceLogDirectory" value="/wss/logs/web/efg" />
+						<property name="fileId" value="1107" />
 				</bean> 
  
  

@@ -156,9 +156,7 @@ public class LogServiceImpl {
 			prodNodeList.add(this.createMenuItems(menu));
 		}		
 	}
-	
-	
-	
+
 	
 	/**
 	 * Top node has to be parent node

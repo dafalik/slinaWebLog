@@ -84,7 +84,7 @@
 	                      $.ajax({
 	                          "dataType": "json",
 	                          "type": "GET",
-	                          "url": "getLogListings.html?uniqueId="+0,
+	                          "url": "dbgetLogListings.html?uniqueId="+0,
 	                          "data": aoData,
 	                          "success": function(json) {
 	                              fnCallback(json);
@@ -136,7 +136,7 @@
 					},	
 					 "json_data" : {
 				            "ajax": {
-				                "url": "menuTree.html"
+				                "url": "dbmenuTree.html"
 				            }
 	                    },
 	                    "dnd" : {
@@ -249,7 +249,7 @@
 			         $.ajax({
 		                    "dataType": "json",
 		                    "type": "GET",
-		                    "url": "getLogListings.html?uniqueId="+logid,
+		                    "url": "dbgetLogListings.html?uniqueId="+logid,
 		                    "success": function(json) {
 
 		                    	//console.log(json);

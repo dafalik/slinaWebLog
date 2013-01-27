@@ -33,7 +33,7 @@ public class LogFilePathImpl implements Serializable, LogFilePath {
 	private int parserConfigId;
 	private String sourceLogDirectory;
 	private Resource resource;
-
+	private Long fileId;
 	
 	
 	@Override
@@ -99,8 +99,14 @@ public class LogFilePathImpl implements Serializable, LogFilePath {
 		return resource;
 	}
 
+	public Long getFileId() {
+		return fileId;
+	}
 
-	
-	
+	public void setFileId(Long fileId) {
+		this.fileId = fileId;
+	}
+
+
 
 }
